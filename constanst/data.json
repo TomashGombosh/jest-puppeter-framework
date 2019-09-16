@@ -1,0 +1,7 @@
+{
+    "first" : {
+        "prod" : "https://swanqa.com/index.php?/auth/login/",
+        "title" : "Login - TestRail",
+        "stage" : "https://stackoverflow.com"
+    }
+}
