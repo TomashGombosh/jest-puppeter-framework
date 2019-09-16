@@ -1,0 +1,15 @@
+### Project
+
+**/bower_components/
+**/node_modules/
+
+
+.idea/
+
+*.sw*
+
+*.code-workspace
+.vscode/
+.DS_Store
+
+npm-debug\.log
