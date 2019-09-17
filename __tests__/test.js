@@ -4,59 +4,100 @@ const LOGS_DIR = '__tests__/logs'
 const log4js = require('log4js');
 const data = require('../constanst/data.json');
 
+const PROD_URL = 'http://oll.libertyfund.org/pages/';
+const STAGE_URL = 'https://jfcote87dev.wpengine.com/pages/'
+
+const TITLE_SELECTOR = '#PageDiv > h1';
+const ARTICLE_SELECTOR = 'section.pages';
+
 log4js.configure({
-  appenders: { log: { type: 'file', filename: `${LOGS_DIR}/log.txt` } },
-  categories: { default: { appenders: ['log'], level: 'trace' } }
+  appenders: { logs: { type: 'file', filename: `${LOGS_DIR}/log-test.log` } },
+  categories: { default: { appenders: ['logs'], level: 'trace' } }
 });
- 
-const log = log4js.getLogger('log');
+
+var testLog = log4js.getLogger('logs');
+
+let i = 0;
+let numberOfLinks = Object.keys(data).length;
 
 function time(){
   return parseInt(new Date().getTime()/1000)
   }
 
-async function validate( page, urlProd, titleStage, urlStage){
-      const titleSelector = 'head > title';
-      log.info(``);
-      log.info(`Start Test`);
-      await page.waitFor(1000);
-      await page.goto(urlProd, {
-        timeout: DEFAULT_TIMEOUT,
-        waitUntil : 'domcontentloaded'
-      });
+async function validate( page, url){
+  
+  log4js.configure({
+    appenders: { log: { type: 'file', filename: `${LOGS_DIR}/log-${url}.txt` } },
+    categories: { default: { appenders: ['log'], level: 'trace' } }
+  });
+  
+  const log = log4js.getLogger('log');
+  log.info(``);
+  log.info(`Test for ${url}`);
+  log.info(`Start Test`);
 
+  await page.waitFor(1000);
+  await page.goto(`${PROD_URL}/${url}`, {
 
-      log.info(`Navigate to the URL ${urlProd}`);
-      await page.screenshot({
-        path: `${SCREENSHOT_DIR}/${time()}-prod.png`,
-        type: 'png'});
-      expect(page.url()).toMatch(urlProd);
+    timeout: DEFAULT_TIMEOUT,
+    waitUntil : 'domcontentloaded'
+  });
+  log.info(`Navigate to the URL ${PROD_URL}/${url}`);
 
-      let bodyProd = await page.evaluate(() => document.body.textContent);
-      log.info(`Get Body from ${urlProd} body is ${bodyProd}`);
+  let titleProd = await page.$eval(TITLE_SELECTOR, TITLE_SELECTOR => TITLE_SELECTOR.textContent);
+  log.info(`Get title from URL ${PROD_URL}/${url} - actual prod title ${titleProd}`);
 
-      let title = await page.$eval(titleSelector, titleSelector => titleSelector.innerHTML);
-      log.info(`Get title from URL ${urlProd} - actual: ${title}, expected: ${titleStage}`);
+  let bodyProd = await page.$eval(ARTICLE_SELECTOR, ARTICLE_SELECTOR=> ARTICLE_SELECTOR.textContent);
 
-      expect(title).toContain(titleStage);
+  await page.screenshot({
+    path: `${SCREENSHOT_DIR}/${time()}-${url}-prod.png`,
+    type: 'png',
+    fullPage: 'true'});
 
-      await page.waitFor(1000);
-      log.info(`Navigate to the URL ${urlStage}`);
-      await page.goto(urlStage, {
-        timeout: DEFAULT_TIMEOUT,
-        waitUntil : 'domcontentloaded'
-      });
+  await page.waitFor(1000);
+  await page.goto(`${STAGE_URL}/${url}`, {
+    timeout: DEFAULT_TIMEOUT,
+    waitUntil : 'domcontentloaded'
+  });
+  log.info(`Navigate to the URL ${STAGE_URL}/${url}`);
 
-      await page.screenshot({
-        path: `${SCREENSHOT_DIR}/${time()}-stage.png`,
-        type: 'png'});
+  let titleStage = await page.$eval(TITLE_SELECTOR, TITLE_SELECTOR => TITLE_SELECTOR.textContent);
+  log.info(`Get title from URL ${STAGE_URL}/${url} - actual prod title ${titleStage}`);
 
-      let bodyStage = await page.evaluate(() => document.body.textContent);
-      log.info(`Get Body from ${urlStage} body is ${bodyStage}`);
+  let bodyStage = await page.$eval(ARTICLE_SELECTOR, ARTICLE_SELECTOR=> ARTICLE_SELECTOR.textContent);
 
-      expect(bodyStage).toContain(bodyProd);
-      log.info(`Test End`);
-      log.info(``);
+  await page.screenshot({
+    path: `${SCREENSHOT_DIR}/${time()}-${url}-stage.png`,
+    type: 'png',
+    fullPage: 'true'});
+  
+  try {
+
+    expect(titleProd.trim()).toContain(titleStage.trim()); 
+
+  } catch(err) {
+
+    testLog.info(`Link: ${url} is failed`);
+     
+    log.error(`Value ${titleProd} and ${titleStage} `);
+    
+    log.error(`Test End`);
+    log.error(``);
+  } 
+
+  try {
+    expect(bodyProd.trim()).toContain(bodyStage.trim());
+    testLog.info(`Link: ${url} is passed`);
+      
+    log.info(`Test End`);
+    log.info(``);
+  } catch(err) {
+
+    testLog.info(`Link: ${url} is failed`);
+    log.error(`Value ${bodyProd} and ${bodyStage} `);
+    log.error(`Test End`);
+    log.error(``);
+  }
 }
 
 describe(
@@ -65,16 +106,455 @@ describe(
     let page
     beforeAll(async () => {
       page = await global.__BROWSER__.newPage()
+      await page.setViewport({width: 1920, height: 1080})
+      jest.setTimeout(100000000);
 
     }, DEFAULT_TIMEOUT)
 
-    afterAll(async () => {
-      await page.close()
-    })
 
-    test('should load without error', async () => {
-        await validate(page, data.first.prod, data.first.title, data.first.stage);
-    })
+    test(`Test Script ${data[0].slug}`, async () => {
+      while(i<numberOfLinks){
+          i++;
+          await validate(page, data[i].slug);
+      }
+    });
+/*
+    test(`Test Script ${data[1].slug}`, async () => {
+    await validate(page, data[1].slug);
+    });
+
+    test(`Test Script ${data[2].slug}`, async () => {
+    await validate(page, data[2].slug);
+    });
+
+    test(`Test Script ${data[3].slug}`, async () => {
+    await validate(page, data[3].slug);
+    });
+
+    test(`Test Script ${data[4].slug}`, async () => {
+    await validate(page, data[4].slug);
+    });
+
+    test(`Test Script ${data[5].slug}`, async () => {
+      await validate(page, data[5].slug);
+    });
+
+    test(`Test Script ${data[6].slug}`, async () => {
+      await validate(page, data[6].slug);
+      });  
+
+    test(`Test Script ${data[6].slug}`, async () => {
+       await validate(page, data[6].slug);
+    });
+
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[8].slug}`, async () => {
+      await validate(page, data[8].slug);
+    });
+    test(`Test Script ${data[9].slug}`, async () => {
+      await validate(page, data[9].slug);
+    });
+    test(`Test Script ${data[10].slug}`, async () => {
+      await validate(page, data[10].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });
+    test(`Test Script ${data[7].slug}`, async () => {
+      await validate(page, data[7].slug);
+    });*/
   },
   DEFAULT_TIMEOUT
 )

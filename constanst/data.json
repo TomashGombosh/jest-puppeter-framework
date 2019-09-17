@@ -1,7 +1,3968 @@
-{
-    "first" : {
-        "prod" : "https://swanqa.com/index.php?/auth/login/",
-        "title" : "Login - TestRail",
-        "stage" : "https://stackoverflow.com"
-    }
-}
+[
+	{
+		"slug" : "about-liberty-fund-inc"
+	},
+	{
+		"slug" : "copyright-and-fair-use"
+	},
+	{
+		"slug" : "carey-s-defence-of-the-constitution"
+	},
+	{
+		"slug" : "begin-searching-the-library-if-you-are-new-to-the-ideas"
+	},
+	{
+		"slug" : "introduction"
+	},
+	{
+		"slug" : "gustave-de-molinari-1819-1912-an-annotated-bibliography-by-david-hart"
+	},
+	{
+		"slug" : "turgot-1727-1781-an-annotated-bibliography-by-david-hart"
+	},
+	{
+		"slug" : "destutt-de-tracy-1754-1836-an-annotated-bibliography-by-david-hart"
+	},
+	{
+		"slug" : "say-1767-1832-an-annotated-bibliography-by-david-hart"
+	},
+	{
+		"slug" : "bastiat-an-annotated-bibliography-by-sheldon-richman"
+	},
+	{
+		"slug" : "frank-h-knight-an-annotated-bibliography-by-ross-emmett"
+	},
+	{
+		"slug" : "18thc-middle-class-radicalism-a-bibliographical-essay-by-isaac-kramnick"
+	},
+	{
+		"slug" : "reader-s-forum-on-norman-barry-s-the-tradition-of-spontaneous-order"
+	},
+	{
+		"slug" : "alexis-de-tocqueville-a-bibliographical-essay-by-john-lukacs"
+	},
+	{
+		"slug" : "idea-of-progress-a-bibliographical-essay-by-robert-nisbet"
+	},
+	{
+		"slug" : "locke-on-property-a-bibliographical-essay-by-karen-vaughn"
+	},
+	{
+		"slug" : "utopia-and-liberty-a-bibliographical-essay-by-kingsley-widmer"
+	},
+	{
+		"slug" : "natural-law-a-bibliographical-essay-by-henry-veatch"
+	},
+	{
+		"slug" : "the-tradition-of-spontaneous-order-a-bibliographical-essay-by-norman-barry"
+	},
+	{
+		"slug" : "monetary-reform-a-bibliographical-essay-by-pamela-j-brown"
+	},
+	{
+		"slug" : "hayek-and-classical-liberalism-a-bibliographical-essay-by-john-gray"
+	},
+	{
+		"slug" : "mill-a-bibliographical-essay-by-john-gray"
+	},
+	{
+		"slug" : "laissez-faire-in-nineteenth-century-britain-a-bibligraphical-essay-by-ellen-f-paul"
+	},
+	{
+		"slug" : "property-rights-and-natural-resource-management-a-bibliographical-essay-by-stroup-and-baden"
+	},
+	{
+		"slug" : "radical-individualism-in-america-a-bibliographical-essay-by-eric-foner"
+	},
+	{
+		"slug" : "founding-father-s-library-a-bibliographical-essay-by-forrest-mcdonald"
+	},
+	{
+		"slug" : "forrest-mcdonald-the-founding-fathers-and-the-economic-order"
+	},
+	{
+		"slug" : "american-revolution-a-bibliographical-essay-by-murray-n-rothbard"
+	},
+	{
+		"slug" : "american-revolution-as-a-people-s-war-a-bibliographical-essay-by-william-marina"
+	},
+	{
+		"slug" : "special-collections-overview"
+	},
+	{
+		"slug" : "kant-immanuel-1724-1804"
+	},
+	{
+		"slug" : "hume-david-1711-1776"
+	},
+	{
+		"slug" : "locke-john-1632-1704-4750134a-8671-44be-a1a8-f38ac1561d7b"
+	},
+	{
+		"slug" : "burke-edmund-1729-1797"
+	},
+	{
+		"slug" : "smith-adam-1723-1790"
+	},
+	{
+		"slug" : "about-econlib"
+	},
+	{
+		"slug" : "bede-saint-672-735"
+	},
+	{
+		"slug" : "aeschylus-525-bc-456-bc"
+	},
+	{
+		"slug" : "anselm-saint-1033-1109"
+	},
+	{
+		"slug" : "aristotle-384-bc-322-bc"
+	},
+	{
+		"slug" : "boethius-470-524"
+	},
+	{
+		"slug" : "beowulf-8thc"
+	},
+	{
+		"slug" : "averroes-1126-1198"
+	},
+	{
+		"slug" : "augustine-saint-354-430"
+	},
+	{
+		"slug" : "amos-8thc-bc"
+	},
+	{
+		"slug" : "ambrose-339-397"
+	},
+	{
+		"slug" : "chaucer-geoffrey-c-1340-1400"
+	},
+	{
+		"slug" : "cicero-marcus-tullius-106bc-43bc"
+	},
+	{
+		"slug" : "condorcet-1743-1794"
+	},
+	{
+		"slug" : "jesus-christ-3-bc-30"
+	},
+	{
+		"slug" : "carmichael-natural-rights"
+	},
+	{
+		"slug" : "coke-sir-edward-1552-1634"
+	},
+	{
+		"slug" : "calvin-john-1509-1564"
+	},
+	{
+		"slug" : "burckhardt-s-pessimistic-conservatism"
+	},
+	{
+		"slug" : "dante-alighieri-1265-1321"
+	},
+	{
+		"slug" : "erasmus-desiderius-1469-1536"
+	},
+	{
+		"slug" : "epictetus-55-135"
+	},
+	{
+		"slug" : "confucius-551-bc-479-bc"
+	},
+	{
+		"slug" : "francis-saint-1181-1226"
+	},
+	{
+		"slug" : "declaration-of-independence-1776"
+	},
+	{
+		"slug" : "1628-petition-of-right"
+	},
+	{
+		"slug" : "homer-9thc-bc-9thc-bc"
+	},
+	{
+		"slug" : "gaius-130-180"
+	},
+	{
+		"slug" : "grotius-hugo-1583-1645"
+	},
+	{
+		"slug" : "hammurabi-s-code-1792-bc-1750-bc"
+	},
+	{
+		"slug" : "roman-gregorian-chant"
+	},
+	{
+		"slug" : "hesiod-c-700-bc-c-700-bc"
+	},
+	{
+		"slug" : "herbert-state-compulsion"
+	},
+	{
+		"slug" : "galilei-galileo-1564-1642"
+	},
+	{
+		"slug" : "gilgamesh"
+	},
+	{
+		"slug" : "isaiah-8thc-bc"
+	},
+	{
+		"slug" : "jeremiah-7th-6thc-bc"
+	},
+	{
+		"slug" : "john-saint-1stc"
+	},
+	{
+		"slug" : "job-6thc-bc"
+	},
+	{
+		"slug" : "luke-saint-1stc"
+	},
+	{
+		"slug" : "humboldt-wilhelm-von-1767-1835"
+	},
+	{
+		"slug" : "kalidasa-5thc-5thc"
+	},
+	{
+		"slug" : "mohammed-570-632"
+	},
+	{
+		"slug" : "luther-martin-1483-1546"
+	},
+	{
+		"slug" : "mises-ludwig-von-1881-1973"
+	},
+	{
+		"slug" : "maimonides-moses-1135-1204"
+	},
+	{
+		"slug" : "matthew-saint-1stc"
+	},
+	{
+		"slug" : "magna-carta-1215"
+	},
+	{
+		"slug" : "milton-john-1608-1674"
+	},
+	{
+		"slug" : "mackay-thomas-1849-1912"
+	},
+	{
+		"slug" : "mark-saint-1stc"
+	},
+	{
+		"slug" : "plotinus-205-270"
+	},
+	{
+		"slug" : "price-richard-1723-1791"
+	},
+	{
+		"slug" : "newton-sir-isaac-1642-1727"
+	},
+	{
+		"slug" : "paul-saint-10-67"
+	},
+	{
+		"slug" : "plutarch-46c-125"
+	},
+	{
+		"slug" : "plato-427c-bc-347-bc"
+	},
+	{
+		"slug" : "north-sir-dudley-1641-1691"
+	},
+	{
+		"slug" : "moses-13thc-bc"
+	},
+	{
+		"slug" : "petrarca-francesco-1304-1374"
+	},
+	{
+		"slug" : "psalms"
+	},
+	{
+		"slug" : "reformation-chorale"
+	},
+	{
+		"slug" : "rigveda"
+	},
+	{
+		"slug" : "shakespeare-william-1564-1616"
+	},
+	{
+		"slug" : "savonarola-girolamo-1452-1498"
+	},
+	{
+		"slug" : "robinson-john-1575-1625"
+	},
+	{
+		"slug" : "socrates-470-bc-399-bc"
+	},
+	{
+		"slug" : "sophocles-496-bc-406-bc"
+	},
+	{
+		"slug" : "thucydides-460c-bc-400-bc"
+	},
+	{
+		"slug" : "zarathushtra-628-bc-522-bc"
+	},
+	{
+		"slug" : "young-arthur-1741-1820"
+	},
+	{
+		"slug" : "tacitus-publius-cornelius-56-120"
+	},
+	{
+		"slug" : "washington-george-1732-1799"
+	},
+	{
+		"slug" : "wyclife-john-1330-1384"
+	},
+	{
+		"slug" : "urukagina-c-2350-bc"
+	},
+	{
+		"slug" : "virgil-70-bc-19-bc"
+	},
+	{
+		"slug" : "george-bernard-shaw-1856-1950-and-the-fabian-society"
+	},
+	{
+		"slug" : "al-ghazali-1058-1111"
+	},
+	{
+		"slug" : "zwingli-huldrych-1484-1531"
+	},
+	{
+		"slug" : "euclid-c-365-300-bc"
+	},
+	{
+		"slug" : "avicenna-980-1037"
+	},
+	{
+		"slug" : "hippocrates-c-460-377-bc"
+	},
+	{
+		"slug" : "bhagavadgita-c-200-bc"
+	},
+	{
+		"slug" : "mencius-371-289-bc"
+	},
+	{
+		"slug" : "french-declaration-of-rights"
+	},
+	{
+		"slug" : "rhazes-ca-865-923-32"
+	},
+	{
+		"slug" : "lao-tzu-c-570-bc"
+	},
+	{
+		"slug" : "huss-jan-1372-1417"
+	},
+	{
+		"slug" : "mahabharata"
+	},
+	{
+		"slug" : "buddha-6thc-bc"
+	},
+	{
+		"slug" : "thales-624-546-b-c"
+	},
+	{
+		"slug" : "code-of-ur-nammu-ca-2050-b-c"
+	},
+	{
+		"slug" : "mo-tzu-c-470-391-bc"
+	},
+	{
+		"slug" : "shih-ching-520-bc"
+	},
+	{
+		"slug" : "goethe-johann-wolfgang-von-1749-1832"
+	},
+	{
+		"slug" : "benedict-saint-480-547"
+	},
+	{
+		"slug" : "copernicus-nicolaus-1473-1543"
+	},
+	{
+		"slug" : "melanchthon-philipp-1497-1560"
+	},
+	{
+		"slug" : "upanishads-c-1000-650-bc"
+	},
+	{
+		"slug" : "heimskringla-1220"
+	},
+	{
+		"slug" : "galen-129-199"
+	},
+	{
+		"slug" : "saga-of-burnt-njal-c-13thc"
+	},
+	{
+		"slug" : "blackstone-william-1723-1780"
+	},
+	{
+		"slug" : "aquinas-st-thomas-1225-1274"
+	},
+	{
+		"slug" : "origen-185-254"
+	},
+	{
+		"slug" : "groot-gerhard-1340-1384"
+	},
+	{
+		"slug" : "archimedes-c-284-211-bc"
+	},
+	{
+		"slug" : "hosea"
+	},
+	{
+		"slug" : "micah"
+	},
+	{
+		"slug" : "molinari-s-signature"
+	},
+	{
+		"slug" : "rule-of-law-us-constitutionalism"
+	},
+	{
+		"slug" : "mill-and-liberty-as-the-cardinal-moral-virtue"
+	},
+	{
+		"slug" : "invisible-hand-explanations-of-society"
+	},
+	{
+		"slug" : "natural-law-and-liberalism"
+	},
+	{
+		"slug" : "mises-money-and-the-fall-and-rise-of-classical-liberalism-in-the-20thc"
+	},
+	{
+		"slug" : "ricardo-david-1772-1823"
+	},
+	{
+		"slug" : "economics-and-ideology-aspects-of-the-post-ricardian-literature-by-s-hollander"
+	},
+	{
+		"slug" : "natural-law-a-select-bibliography"
+	},
+	{
+		"slug" : "legal-history-a-selected-bibliography"
+	},
+	{
+		"slug" : "law-and-liberty-by-roscoe-pound"
+	},
+	{
+		"slug" : "grotius-and-the-natural-law-tradition"
+	},
+	{
+		"slug" : "turgot-and-enlightened-progress"
+	},
+	{
+		"slug" : "eighteenth-century-middle-class-english-radicalism"
+	},
+	{
+		"slug" : "chaucer-a-list-of-his-works"
+	},
+	{
+		"slug" : "neh-award"
+	},
+	{
+		"slug" : "karl-marx-and-the-liberal-critique-of-socialism"
+	},
+	{
+		"slug" : "william-brough-and-gresham-s-law"
+	},
+	{
+		"slug" : "eugen-richter-and-the-critique-of-socialism"
+	},
+	{
+		"slug" : "goodrich-seminar-room"
+	},
+	{
+		"slug" : "blackstone-analysis-and-contents-of-vol-2-of-commentaries-on-the-law-of-england"
+	},
+	{
+		"slug" : "ahrc-award"
+	},
+	{
+		"slug" : "bentham-on-usury"
+	},
+	{
+		"slug" : "the-political-writings-of-james-mill-toc"
+	},
+	{
+		"slug" : "the-twelve-days-of-christmas"
+	},
+	{
+		"slug" : "the-people-and-the-ruling-elite-in-caricatures-wade-and-daumier"
+	},
+	{
+		"slug" : "the-earl-of-shaftesbury-on-liberty-and-harmony"
+	},
+	{
+		"slug" : "word-clouds-of-liberty"
+	},
+	{
+		"slug" : "heineccius-and-turnbull-on-natural-law"
+	},
+	{
+		"slug" : "the-seal-of-florence"
+	},
+	{
+		"slug" : "engraving-of-john-toland"
+	},
+	{
+		"slug" : "thomas-hollis-and-john-locke"
+	},
+	{
+		"slug" : "amagi-symbol-liberty-fund-s-logo"
+	},
+	{
+		"slug" : "12-key-concepts-of-liberty"
+	},
+	{
+		"slug" : "abolition-of-the-slave-trade"
+	},
+	{
+		"slug" : "grotius-and-war-and-peace"
+	},
+	{
+		"slug" : "hobbes-leviathan"
+	},
+	{
+		"slug" : "plutarch-s-parallel-lives"
+	},
+	{
+		"slug" : "aristotle-and-adam-smith"
+	},
+	{
+		"slug" : "shakespearean-tragedies"
+	},
+	{
+		"slug" : "tacitus-and-tyranny"
+	},
+	{
+		"slug" : "mill-and-taylor"
+	},
+	{
+		"slug" : "locke-s-importance"
+	},
+	{
+		"slug" : "hayek-and-spontaneous-orders"
+	},
+	{
+		"slug" : "polanyi-and-spontaneous-ordering"
+	},
+	{
+		"slug" : "tocqueville-and-self-government"
+	},
+	{
+		"slug" : "hayek-and-harper-on-liberal-utopia"
+	},
+	{
+		"slug" : "bright-and-19th-century-english-liberalism"
+	},
+	{
+		"slug" : "fuller-and-the-law"
+	},
+	{
+		"slug" : "hayek-and-the-american-constitution"
+	},
+	{
+		"slug" : "1215-magna-carta"
+	},
+	{
+		"slug" : "1789-french-declaration-of-the-rights-of-man"
+	},
+	{
+		"slug" : "1787-us-constitution"
+	},
+	{
+		"slug" : "intellectual-portrait-series"
+	},
+	{
+		"slug" : "coke-s-splendid-lineage"
+	},
+	{
+		"slug" : "classics-of-political-thought"
+	},
+	{
+		"slug" : "founding-father-s-library"
+	},
+	{
+		"slug" : "sidney-filmer-locke-on-monarchical-power"
+	},
+	{
+		"slug" : "jsm-toc"
+	},
+	{
+		"slug" : "mill-and-taylor-on-women"
+	},
+	{
+		"slug" : "milton-john-1608-1674-77c65e04-dc87-49c6-a665-baa60e7e041e"
+	},
+	{
+		"slug" : "milton-and-freedom-of-speech"
+	},
+	{
+		"slug" : "milton-on-the-right-to-depose-a-tyrant-king"
+	},
+	{
+		"slug" : "milton-on-the-ideal-republic"
+	},
+	{
+		"slug" : "magna-carta-an-historical-introduction"
+	},
+	{
+		"slug" : "hume-the-historian"
+	},
+	{
+		"slug" : "colonial-origins-of-the-american-constitution"
+	},
+	{
+		"slug" : "hume-the-pihlosopher"
+	},
+	{
+		"slug" : "shaftesbury-s-illustrations"
+	},
+	{
+		"slug" : "hobbes-philosophy"
+	},
+	{
+		"slug" : "madison-and-federalism"
+	},
+	{
+		"slug" : "cannan-s-introduction-to-adam-smith-s-wealth-of-nations"
+	},
+	{
+		"slug" : "gaius-institutes-of-roman-law-an-historical-introduction"
+	},
+	{
+		"slug" : "montesquieu-and-the-separation-of-powers"
+	},
+	{
+		"slug" : "hume-the-progress-of-english-liberty-1778"
+	},
+	{
+		"slug" : "spencer-the-right-to-ignore-the-state-1851"
+	},
+	{
+		"slug" : "hirst-on-the-manchester-school"
+	},
+	{
+		"slug" : "mill-james-1773-1836"
+	},
+	{
+		"slug" : "james-mill-s-early-economic-writings"
+	},
+	{
+		"slug" : "james-mill-and-david-ricardo"
+	},
+	{
+		"slug" : "james-mill-on-method"
+	},
+	{
+		"slug" : "james-mill-and-india"
+	},
+	{
+		"slug" : "ricardo-david-1772-1823-e440756b-d849-4644-b88d-21ad74952b74"
+	},
+	{
+		"slug" : "maitland-s-outlines-of-english-legal-history"
+	},
+	{
+		"slug" : "acton-on-machiavelli"
+	},
+	{
+		"slug" : "machiavelli-niccolo-1469-1527"
+	},
+	{
+		"slug" : "althusius-and-the-federal-commonwealth"
+	},
+	{
+		"slug" : "trevor-roper-on-the-general-crisis-of-the-17thc"
+	},
+	{
+		"slug" : "rommen-and-natural-law"
+	},
+	{
+		"slug" : "rommen-on-natural-law-in-the-age-of-individualism"
+	},
+	{
+		"slug" : "emerson-on-montaigne"
+	},
+	{
+		"slug" : "locke-john-1632-1704"
+	},
+	{
+		"slug" : "st-francis-of-assisi-his-writings"
+	},
+	{
+		"slug" : "sumner-his-writings"
+	},
+	{
+		"slug" : "sumner-the-conquest-of-the-us-by-spain-1898"
+	},
+	{
+		"slug" : "leggett-and-the-doctrine-of-equal-rights"
+	},
+	{
+		"slug" : "mandeville-his-life-and-work"
+	},
+	{
+		"slug" : "jefferson-history-and-the-rights-of-expatriated-men"
+	},
+	{
+		"slug" : "political-sermons-and-the-american-revolution"
+	},
+	{
+		"slug" : "mises-on-the-foundations-of-classical-liberalism"
+	},
+	{
+		"slug" : "hayek-the-use-of-knowledge-in-society"
+	},
+	{
+		"slug" : "hayek-principles-or-expediency"
+	},
+	{
+		"slug" : "hutt-reflections-on-the-keynsian-episode"
+	},
+	{
+		"slug" : "lachmann-mises-and-the-market-process"
+	},
+	{
+		"slug" : "buchanan-how-should-common-access-facilities-be-financed"
+	},
+	{
+		"slug" : "hazlitt-the-future-of-capitalism"
+	},
+	{
+		"slug" : "kirzner-entrepreneurship-the-market-approach-to-development"
+	},
+	{
+		"slug" : "read-to-abdicate-or-not"
+	},
+	{
+		"slug" : "rothbard-lange-mises-and-praxeology"
+	},
+	{
+		"slug" : "acton-s-education"
+	},
+	{
+		"slug" : "tullock-application-of-economics-in-biology"
+	},
+	{
+		"slug" : "zwingli-and-the-swiss-reformation"
+	},
+	{
+		"slug" : "oppenheimer-the-genesis-of-the-state-1922"
+	},
+	{
+		"slug" : "jasay-the-capitalist-state"
+	},
+	{
+		"slug" : "penn-life-and-times-and-work"
+	},
+	{
+		"slug" : "boehm-bawerk-s-theory-of-capital"
+	},
+	{
+		"slug" : "kant-s-political-philosophy"
+	},
+	{
+		"slug" : "kant-immanuel-1724-1804-5370b041-269c-4e5c-af6e-661b31fce167"
+	},
+	{
+		"slug" : "kant-s-position-as-a-philosopher"
+	},
+	{
+		"slug" : "coke-selected-readings-on-sir-edward-coke"
+	},
+	{
+		"slug" : "1796-george-washington-s-farewell-address-speech"
+	},
+	{
+		"slug" : "1776-declaration-of-independence-various-drafts"
+	},
+	{
+		"slug" : "mackay-on-the-socialist-dystopia"
+	},
+	{
+		"slug" : "coke-s-crest-and-motto"
+	},
+	{
+		"slug" : "hume-s-essays"
+	},
+	{
+		"slug" : "mill-on-politics-society-collected-works-vol-xviii"
+	},
+	{
+		"slug" : "mill-on-political-economy-collected-works-vol-ii"
+	},
+	{
+		"slug" : "mill-s-essays-on-economics-collected-works-vol-iv"
+	},
+	{
+		"slug" : "mill-on-india-collected-works-vol-xxx"
+	},
+	{
+		"slug" : "mill-on-french-history-collected-works-vol-xx"
+	},
+	{
+		"slug" : "mill-on-equality-law-education-collected-works-vol-xxi"
+	},
+	{
+		"slug" : "mill-s-system-of-logic-selected-works-vol-vii"
+	},
+	{
+		"slug" : "mill-s-autobiography-literary-essays-collected-works-vol-i"
+	},
+	{
+		"slug" : "mill-on-england-ireland-empire-collected-works-vol-vi"
+	},
+	{
+		"slug" : "mill-on-hamilton-s-philosophy-collected-works-vol-ix"
+	},
+	{
+		"slug" : "mill-on-ethics-religion-collected-works-vol-x"
+	},
+	{
+		"slug" : "mill-s-utilitarianism-collected-works-vol-x"
+	},
+	{
+		"slug" : "mill-on-philosophy-classics-collected-works-vol-xi"
+	},
+	{
+		"slug" : "hayek-on-mill-s-early-letters-collected-works-vol-xii"
+	},
+	{
+		"slug" : "mill-s-parliamentary-speeches-collected-works-vol-xxviii"
+	},
+	{
+		"slug" : "mill-s-later-letters-collected-works-vol-xiv"
+	},
+	{
+		"slug" : "mill-s-newspaper-articles-collected-works-vol-xxii"
+	},
+	{
+		"slug" : "mill-s-journals-debating-speeches-collected-works-vol-xxviii"
+	},
+	{
+		"slug" : "mill-s-additional-letters-collected-works-vol-xxxii"
+	},
+	{
+		"slug" : "gibbon-on-the-decline-of-the-empire-in-the-west"
+	},
+	{
+		"slug" : "bentham-on-the-principles-of-morals-legislation"
+	},
+	{
+		"slug" : "dicey-his-life-law-of-the-constitution"
+	},
+	{
+		"slug" : "lecky-on-gibbon"
+	},
+	{
+		"slug" : "plato-s-the-republic-jowett-s-analysis"
+	},
+	{
+		"slug" : "plato-s-the-laws-jowett-s-analysis"
+	},
+	{
+		"slug" : "rommen-the-study-of-natural-law-in-the-20thc"
+	},
+	{
+		"slug" : "calhoun-on-union-liberty"
+	},
+	{
+		"slug" : "say-on-colonial-slave-labor"
+	},
+	{
+		"slug" : "say-on-property-rights"
+	},
+	{
+		"slug" : "voltaire-religious-intolerance"
+	},
+	{
+		"slug" : "guyot-yves-1843-1928"
+	},
+	{
+		"slug" : "james-mill-on-writing-his-critical-history-of-india"
+	},
+	{
+		"slug" : "hume-s-religious-partiality-in-his-history-of-england"
+	},
+	{
+		"slug" : "hume-s-life-written-by-himself"
+	},
+	{
+		"slug" : "lecky-on-writing-a-history-of-morals"
+	},
+	{
+		"slug" : "chronology-the-life-of-lord-acton"
+	},
+	{
+		"slug" : "acton-as-an-historian-of-freedom"
+	},
+	{
+		"slug" : "acton-the-history-of-freedom-in-antiquity"
+	},
+	{
+		"slug" : "acton-the-history-of-freedom-in-christianity"
+	},
+	{
+		"slug" : "ingram-history-of-the-early-austrian-school-of-economics"
+	},
+	{
+		"slug" : "friedman-on-i-pencil-the-invisible-hand"
+	},
+	{
+		"slug" : "marxism-a-reading-list-by-h-b-acton"
+	},
+	{
+		"slug" : "marxism-as-farrago-a-dialog-betwen-h-b-acton-a-reader"
+	},
+	{
+		"slug" : "martineau-on-property-slave-labour"
+	},
+	{
+		"slug" : "dicey-on-the-rise-of-legal-collectivism-in-the-20thc"
+	},
+	{
+		"slug" : "womersley-the-american-revolution-as-a-conservative-revolution"
+	},
+	{
+		"slug" : "american-early-republic-bibliography-of-primary-sources"
+	},
+	{
+		"slug" : "1798-kentucky-resolutions-jefferson-s-draft"
+	},
+	{
+		"slug" : "stephen-s-critique-of-mill-s-idea-of-liberty"
+	},
+	{
+		"slug" : "1689-english-bill-of-rights"
+	},
+	{
+		"slug" : "1776-virginia-bill-of-rights"
+	},
+	{
+		"slug" : "1791-us-bill-of-rights-1st-10-amendments-with-commentary"
+	},
+	{
+		"slug" : "1778-articles-of-confederation"
+	},
+	{
+		"slug" : "1798-1992-us-bill-of-rights-amendments-xi-xxvii"
+	},
+	{
+		"slug" : "cobden-bibliography"
+	},
+	{
+		"slug" : "washington-marshall-s-life"
+	},
+	{
+		"slug" : "shudraka-life-and-plays"
+	},
+	{
+		"slug" : "hutcheson-on-logic-metaphysics-sociability"
+	},
+	{
+		"slug" : "greek-tragedy-its-genius-character"
+	},
+	{
+		"slug" : "a-guide-to-adam-smith-online"
+	},
+	{
+		"slug" : "rogge-on-adam-smith"
+	},
+	{
+		"slug" : "rae-on-the-publication-of-the-wealth-of-nations-1776"
+	},
+	{
+		"slug" : "ingram-on-smith-and-his-followers"
+	},
+	{
+		"slug" : "a-guide-to-js-mill-online"
+	},
+	{
+		"slug" : "acton-as-a-professor"
+	},
+	{
+		"slug" : "acton-s-inaugural-lecture-on-history"
+	},
+	{
+		"slug" : "acton-on-the-french-revolution"
+	},
+	{
+		"slug" : "rousseau-on-war"
+	},
+	{
+		"slug" : "hayek-economics-and-knowledge-1936"
+	},
+	{
+		"slug" : "history-in-the-colonial-library"
+	},
+	{
+		"slug" : "walter-williams-on-bastiat"
+	},
+	{
+		"slug" : "sheldon-richman-on-bastiat"
+	},
+	{
+		"slug" : "descartes-life-works"
+	},
+	{
+		"slug" : "kant-s-philosophy"
+	},
+	{
+		"slug" : "spencer-the-state"
+	},
+	{
+		"slug" : "spencer-by-albert-jay-nock"
+	},
+	{
+		"slug" : "spencer-proper-sphere-of-government-1843"
+	},
+	{
+		"slug" : "tocqueville-and-democracy"
+	},
+	{
+		"slug" : "tocqueville-a-bibliography"
+	},
+	{
+		"slug" : "magna-carta-700th-anniversary"
+	},
+	{
+		"slug" : "magna-carta-and-the-common-law"
+	},
+	{
+		"slug" : "magna-carta-and-the-us-constitution"
+	},
+	{
+		"slug" : "hodgskin-on-the-natural-right-to-property-1832"
+	},
+	{
+		"slug" : "hume-on-natural-religion"
+	},
+	{
+		"slug" : "milton-john-1608-1674-2"
+	},
+	{
+		"slug" : "st-anselm-s-philosophy"
+	},
+	{
+		"slug" : "berger-on-the-14th-amendment"
+	},
+	{
+		"slug" : "berger-the-14th-amendement"
+	},
+	{
+		"slug" : "maimonides-the-perplexed"
+	},
+	{
+		"slug" : "pamphlet-debate-on-the-us-constitution"
+	},
+	{
+		"slug" : "bayle-religious-conflict"
+	},
+	{
+		"slug" : "hamilton-the-federalist"
+	},
+	{
+		"slug" : "epictetus-philosophy"
+	},
+	{
+		"slug" : "robinson-john-a-memoir"
+	},
+	{
+		"slug" : "marlowe-the-playwright"
+	},
+	{
+		"slug" : "hooker-on-religious-controversy-in-england"
+	},
+	{
+		"slug" : "hooker-s-life-by-isaac-walton"
+	},
+	{
+		"slug" : "jefferson-an-introduction-to-his-writings"
+	},
+	{
+		"slug" : "voltaire-incidents-in-his-life"
+	},
+	{
+		"slug" : "chronology-the-life-of-thomas-jefferson"
+	},
+	{
+		"slug" : "a-guide-to-david-ricardo-online"
+	},
+	{
+		"slug" : "editor-s-intro-to-principles-of-political-economy"
+	},
+	{
+		"slug" : "editor-s-intro-to-ricardo-s-notes-on-malthus"
+	},
+	{
+		"slug" : "editor-s-intro-to-ricardo-s-speeches-in-parliament"
+	},
+	{
+		"slug" : "editor-s-intro-to-ricardo-s-correspondence"
+	},
+	{
+		"slug" : "st-francis-of-assisi-bibliography"
+	},
+	{
+		"slug" : "paine-and-the-french-revolution"
+	},
+	{
+		"slug" : "paine-s-theism"
+	},
+	{
+		"slug" : "pufendorf-on-the-duty-of-man"
+	},
+	{
+		"slug" : "locke-a-life"
+	},
+	{
+		"slug" : "zoroaster-s-teachings"
+	},
+	{
+		"slug" : "sirc-problems-of-economic-resposibility"
+	},
+	{
+		"slug" : "sennholz-the-chicago-monetary-tradition"
+	},
+	{
+		"slug" : "wyclife-s-tracts"
+	},
+	{
+		"slug" : "kalidasa-life-and-works"
+	},
+	{
+		"slug" : "young-s-travels-in-france"
+	},
+	{
+		"slug" : "arthur-young-a-bibliography"
+	},
+	{
+		"slug" : "young-arthur-a-biographical-sketch"
+	},
+	{
+		"slug" : "bacon-francis-1561-1626"
+	},
+	{
+		"slug" : "al-ghazali-on-piety"
+	},
+	{
+		"slug" : "bryce-on-america"
+	},
+	{
+		"slug" : "smart-on-boehm-bawerk"
+	},
+	{
+		"slug" : "lachmann-a-bibliography"
+	},
+	{
+		"slug" : "lachmann-and-the-subjective-paradigm"
+	},
+	{
+		"slug" : "lachmann-the-significance-of-the-austrian-school"
+	},
+	{
+		"slug" : "fetter-s-economic-thought"
+	},
+	{
+		"slug" : "mcdonald-on-washington-s-favorite-play-cato"
+	},
+	{
+		"slug" : "addison-s-cato"
+	},
+	{
+		"slug" : "sumner-a-sketch"
+	},
+	{
+		"slug" : "shaftesbury-s-aesthetics-moral-philosophy"
+	},
+	{
+		"slug" : "chodorov-s-political-thought"
+	},
+	{
+		"slug" : "chodorov-a-selected-bibliography"
+	},
+	{
+		"slug" : "chodorov-socialism-via-taxation-1946"
+	},
+	{
+		"slug" : "spinoza-s-political-theory"
+	},
+	{
+		"slug" : "mahabharata-503b4f58-0e86-40fb-8bc6-1fcb693ee7a8"
+	},
+	{
+		"slug" : "ramayana"
+	},
+	{
+		"slug" : "yeager-smith-on-central-banking"
+	},
+	{
+		"slug" : "farrand-on-the-federal-convention-of-1787"
+	},
+	{
+		"slug" : "adams-on-the-american-revolution"
+	},
+	{
+		"slug" : "hayek-on-richard-cantillon"
+	},
+	{
+		"slug" : "grotius-and-the-laws-of-war"
+	},
+	{
+		"slug" : "grotius-and-the-laws-of-war-ii"
+	},
+	{
+		"slug" : "rigveda-bb9b3cc7-fc0e-421b-9520-2dccdc6255b6"
+	},
+	{
+		"slug" : "tucker-and-the-us-constitution"
+	},
+	{
+		"slug" : "mackintosh-and-the-french-revolution"
+	},
+	{
+		"slug" : "jesus-on-war"
+	},
+	{
+		"slug" : "bede-s-history-of-england"
+	},
+	{
+		"slug" : "bastiat-s-economic-thought"
+	},
+	{
+		"slug" : "kirzner-on-the-economic-point-of-view"
+	},
+	{
+		"slug" : "hazlitt-on-bastiat"
+	},
+	{
+		"slug" : "petty-s-life-and-economic-thought"
+	},
+	{
+		"slug" : "mises-his-life-influence"
+	},
+	{
+		"slug" : "kant-and-education"
+	},
+	{
+		"slug" : "culverwell-on-reason-and-faith"
+	},
+	{
+		"slug" : "home-on-criticism"
+	},
+	{
+		"slug" : "fordyce-s-moral-philosophy"
+	},
+	{
+		"slug" : "dickinson-lee-on-federal-power"
+	},
+	{
+		"slug" : "plotinus-a-conspectus-of-his-philosophy"
+	},
+	{
+		"slug" : "jevons-on-richard-cantillon"
+	},
+	{
+		"slug" : "higgs-life-works-of-richard-cantillon"
+	},
+	{
+		"slug" : "hutcheson-and-the-passions"
+	},
+	{
+		"slug" : "montaigne-a-sketch"
+	},
+	{
+		"slug" : "home-and-natural-religion"
+	},
+	{
+		"slug" : "cicero-on-moral-duties"
+	},
+	{
+		"slug" : "cicero-on-old-age"
+	},
+	{
+		"slug" : "cicero-on-friendship"
+	},
+	{
+		"slug" : "smart-on-wieser-s-theory-of-value"
+	},
+	{
+		"slug" : "pufendorf-and-religious-toleration"
+	},
+	{
+		"slug" : "cicero-on-the-gods"
+	},
+	{
+		"slug" : "o-driscoll-spontaneous-order-and-coordination"
+	},
+	{
+		"slug" : "madison-s-theory-of-the-republic"
+	},
+	{
+		"slug" : "erasmus-desiderius-1469-1536-67f715b3-b58b-43b3-b1b5-b879256b6b7d"
+	},
+	{
+		"slug" : "hutcheson-on-liberty-and-happiness"
+	},
+	{
+		"slug" : "livy-s-history-of-rome"
+	},
+	{
+		"slug" : "ramsay-s-history-of-the-american-revolution"
+	},
+	{
+		"slug" : "ramsay-david-a-bibliography"
+	},
+	{
+		"slug" : "warren-s-history-of-the-american-revolution"
+	},
+	{
+		"slug" : "warren-mercy-otis-a-bibliography"
+	},
+	{
+		"slug" : "lecky-on-european-rationalism"
+	},
+	{
+		"slug" : "luther-s-hymns"
+	},
+	{
+		"slug" : "mises-the-place-of-economics-in-learning"
+	},
+	{
+		"slug" : "turnbull-and-liberal-education"
+	},
+	{
+		"slug" : "harrington-s-life-by-john-toland"
+	},
+	{
+		"slug" : "ambrose-and-catechetical-instruction"
+	},
+	{
+		"slug" : "millar-and-the-distinction-of-ranks"
+	},
+	{
+		"slug" : "condorcet-10th-epoch-future-progress-of-man-1796"
+	},
+	{
+		"slug" : "lecky-and-democracy"
+	},
+	{
+		"slug" : "dante-s-divine-comedy"
+	},
+	{
+		"slug" : "pufendorf-and-religious-toleration-ii"
+	},
+	{
+		"slug" : "calvin-s-commentary-on-paul-s-epistle-to-the-romans"
+	},
+	{
+		"slug" : "grotius-on-prize-and-booty"
+	},
+	{
+		"slug" : "wicksteed-on-the-psychology-of-choice"
+	},
+	{
+		"slug" : "king-alfred-s-translation-of-boethius"
+	},
+	{
+		"slug" : "separation-of-powers-a-bibliography-by-vile"
+	},
+	{
+		"slug" : "doctrine-of-the-separation-of-powers"
+	},
+	{
+		"slug" : "macaulay-southey-s-colloquies-1830"
+	},
+	{
+		"slug" : "kant-s-critique-of-judgement"
+	},
+	{
+		"slug" : "luther-s-religious-thought"
+	},
+	{
+		"slug" : "luther-and-the-reformation-in-germany"
+	},
+	{
+		"slug" : "timeline-american-founding"
+	},
+	{
+		"slug" : "sumner-a-bibliography"
+	},
+	{
+		"slug" : "sumner-the-forgotten-man-1883"
+	},
+	{
+		"slug" : "rothbard-on-the-prehistory-of-the-austrian-school"
+	},
+	{
+		"slug" : "grotius-the-free-seas-a-bibliography"
+	},
+	{
+		"slug" : "grotius-the-freedom-of-the-seas"
+	},
+	{
+		"slug" : "burke-and-the-french-revolution-iv"
+	},
+	{
+		"slug" : "kant-s-philosophy-of-law"
+	},
+	{
+		"slug" : "kantian-natural-law-a-bibliography"
+	},
+	{
+		"slug" : "higgs-on-the-influence-of-the-physiocrats"
+	},
+	{
+		"slug" : "richter-s-socialist-dystopia"
+	},
+	{
+		"slug" : "plutarch-s-own-life"
+	},
+	{
+		"slug" : "hesiod-s-life-and-works"
+	},
+	{
+		"slug" : "althusius-a-bibliography"
+	},
+	{
+		"slug" : "althusius-s-political-thought"
+	},
+	{
+		"slug" : "althusius-s-schema-for-politica"
+	},
+	{
+		"slug" : "american-political-sermons"
+	},
+	{
+		"slug" : "american-political-sermons-a-bibliography"
+	},
+	{
+		"slug" : "cicero-s-life-and-politics"
+	},
+	{
+		"slug" : "cicero-s-commonwealth"
+	},
+	{
+		"slug" : "cicero-s-treatise-on-the-laws"
+	},
+	{
+		"slug" : "cobden-s-political-thought"
+	},
+	{
+		"slug" : "cobden-a-bibliography"
+	},
+	{
+		"slug" : "rousseau-as-political-philosopher"
+	},
+	{
+		"slug" : "penn-s-life-and-political-thought"
+	},
+	{
+		"slug" : "chronology-the-life-and-times-of-william-penn"
+	},
+	{
+		"slug" : "aristotle-s-politics"
+	},
+	{
+		"slug" : "nisbet-the-prevalence-of-war"
+	},
+	{
+		"slug" : "marshall-on-the-growth-of-free-industry-and-enterprise"
+	},
+	{
+		"slug" : "machan-spencer-a-century-later"
+	},
+	{
+		"slug" : "paley-s-moral-philosophy"
+	},
+	{
+		"slug" : "burlamaqui-and-natural-law"
+	},
+	{
+		"slug" : "ashley-s-introduction-to-mill-s-principles-of-political-economy"
+	},
+	{
+		"slug" : "ashley-s-bibliographical-appendix-to-mill-s-principles-of-political-economy"
+	},
+	{
+		"slug" : "kant-s-political-philosophy-ii"
+	},
+	{
+		"slug" : "burke-a-biographical-note"
+	},
+	{
+		"slug" : "burke-and-the-american-revolution"
+	},
+	{
+		"slug" : "burke-and-the-french-revolution-i"
+	},
+	{
+		"slug" : "chronology-the-life-and-work-of-edmund-burke"
+	},
+	{
+		"slug" : "burke-and-the-french-revolution-ii"
+	},
+	{
+		"slug" : "burke-and-the-french-revolution-iii"
+	},
+	{
+		"slug" : "burke-and-the-british-empire"
+	},
+	{
+		"slug" : "hayek-on-bastiat"
+	},
+	{
+		"slug" : "burke-a-select-bibliography"
+	},
+	{
+		"slug" : "bright-s-speeches-on-war"
+	},
+	{
+		"slug" : "shakespeare-s-plutarch-i"
+	},
+	{
+		"slug" : "shakespeare-s-plutarch-ii"
+	},
+	{
+		"slug" : "shakespeare-s-sonnets"
+	},
+	{
+		"slug" : "rousseau-s-political-thought"
+	},
+	{
+		"slug" : "molinari-s-future-society-of-absolute-liberty"
+	},
+	{
+		"slug" : "augustine-s-soliloquies"
+	},
+	{
+		"slug" : "petrarch"
+	},
+	{
+		"slug" : "petrarch-a-bibliography"
+	},
+	{
+		"slug" : "al-ghazali-s-moral-philosophy"
+	},
+	{
+		"slug" : "cobden-s-speeches-on-free-trade"
+	},
+	{
+		"slug" : "cobden-an-appreciation-i"
+	},
+	{
+		"slug" : "cobden-an-appreciation-ii"
+	},
+	{
+		"slug" : "rhazes-s-spiritual-physic"
+	},
+	{
+		"slug" : "viner-on-international-trade"
+	},
+	{
+		"slug" : "international-trade-a-bibliography"
+	},
+	{
+		"slug" : "demsetz-and-property-rights"
+	},
+	{
+		"slug" : "julian-george-washington-1817-1899"
+	},
+	{
+		"slug" : "hospers-and-the-socratic-spirit"
+	},
+	{
+		"slug" : "ethics-in-the-20th-century-a-bibliographical-essay-by-john-hospers"
+	},
+	{
+		"slug" : "libertarian-political-philosophy-a-bibliographical-essay-by-david-gordon"
+	},
+	{
+		"slug" : "hoover-herbert-1874-1964"
+	},
+	{
+		"slug" : "tucker-benjamin-1854-1939"
+	},
+	{
+		"slug" : "american-anti-interventionist-tradition-a-bibliographical-essay-by-justus-doenecke"
+	},
+	{
+		"slug" : "benjamin-tucker-and-liberty-a-bibliographical-essay-by-wendy-mcelroy"
+	},
+	{
+		"slug" : "millar-and-the-english-government"
+	},
+	{
+		"slug" : "cato-s-letters-liberty-and-responsibility"
+	},
+	{
+		"slug" : "search-an-author-s-works"
+	},
+	{
+		"slug" : "search-a-subject-area"
+	},
+	{
+		"slug" : "search-a-collection-of-works"
+	},
+	{
+		"slug" : "citation-generator"
+	},
+	{
+		"slug" : "cite-a-book"
+	},
+	{
+		"slug" : "view-titles-in-html-format"
+	},
+	{
+		"slug" : "famous-economists-and-political-philosophers"
+	},
+	{
+		"slug" : "mill-macaulay-debate-on-government"
+	},
+	{
+		"slug" : "milton-s-political-writings"
+	},
+	{
+		"slug" : "jefferson-hamilton-debate-session-1"
+	},
+	{
+		"slug" : "constant-and-modernity"
+	},
+	{
+		"slug" : "chronology-aquinas-his-works-and-life"
+	},
+	{
+		"slug" : "video-viewing-guide-life-and-thought-of-hayek"
+	},
+	{
+		"slug" : "video-viewing-guide-the-industrial-revolution-part-1"
+	},
+	{
+		"slug" : "video-viewing-guide-the-industrial-revolution-part-2"
+	},
+	{
+		"slug" : "video-viewing-guide-the-industrial-revolution-part-3"
+	},
+	{
+		"slug" : "video-viewing-guide-hong-kong"
+	},
+	{
+		"slug" : "video-viewing-guide-the-american-constitution"
+	},
+	{
+		"slug" : "video-viewing-guide-adam-smith-and-the-wealth-of-nations"
+	},
+	{
+		"slug" : "american-society-of-18th-century-studies-atlanta-march-2007"
+	},
+	{
+		"slug" : "federalist-an-introduction-by-carey-and-mcclellan"
+	},
+	{
+		"slug" : "federalist-a-reader-s-guide"
+	},
+	{
+		"slug" : "federalist-a-glossary"
+	},
+	{
+		"slug" : "constant-s-political-thought"
+	},
+	{
+		"slug" : "mises-keynes-and-the-versailles-treaty"
+	},
+	{
+		"slug" : "mises-on-the-economic-foundations-of-freedom"
+	},
+	{
+		"slug" : "galileo-and-the-new-science"
+	},
+	{
+		"slug" : "timeline-natural-law-enlightenment"
+	},
+	{
+		"slug" : "mises-literature-under-capitalism"
+	},
+	{
+		"slug" : "pufendorf-s-history-of-the-german-empire"
+	},
+	{
+		"slug" : "pufendorf-and-the-german-empire-a-bibliography"
+	},
+	{
+		"slug" : "mises-on-bureaucracy"
+	},
+	{
+		"slug" : "mises-on-human-action"
+	},
+	{
+		"slug" : "mises-on-the-market-society"
+	},
+	{
+		"slug" : "mises-on-the-impossibility-of-economic-calculation-under-socialism"
+	},
+	{
+		"slug" : "mises-human-action-a-glossary"
+	},
+	{
+		"slug" : "augustine-s-life-and-work"
+	},
+	{
+		"slug" : "gardiner-on-the-english-revolution"
+	},
+	{
+		"slug" : "bentham-s-panopticon"
+	},
+	{
+		"slug" : "thomasius-on-church-and-state"
+	},
+	{
+		"slug" : "1679-habeas-corpus-act"
+	},
+	{
+		"slug" : "1793-french-republic-constitution-of-1793"
+	},
+	{
+		"slug" : "1830-french-charter-of-1830"
+	},
+	{
+		"slug" : "taylor-and-american-tyranny"
+	},
+	{
+		"slug" : "taylor-john-a-bibliography"
+	},
+	{
+		"slug" : "richard-cumberland-and-natural-law"
+	},
+	{
+		"slug" : "herbert-spencer-principles-of-ethics-1887"
+	},
+	{
+		"slug" : "introduction-8c353521-da36-4406-8592-feff0fba71d6"
+	},
+	{
+		"slug" : "aquinas-on-fraudulent-dealing"
+	},
+	{
+		"slug" : "aquinas-on-usury"
+	},
+	{
+		"slug" : "caricature-of-richard-cromwell"
+	},
+	{
+		"slug" : "politics-and-the-army-in-the-english-civil-war-part-1"
+	},
+	{
+		"slug" : "politics-and-the-army-in-the-english-civil-war-part-2"
+	},
+	{
+		"slug" : "politics-and-the-army-in-the-english-civil-war-part-3"
+	},
+	{
+		"slug" : "politics-and-the-army-in-the-english-civil-war-part-4"
+	},
+	{
+		"slug" : "chaucer-s-astrolabe"
+	},
+	{
+		"slug" : "chaucer-s-life-by-walter-skeat"
+	},
+	{
+		"slug" : "huss-and-the-church"
+	},
+	{
+		"slug" : "passmore-on-the-perfectibility-of-man"
+	},
+	{
+		"slug" : "hume-s-essays-67e6d294-5525-417a-b4d1-46520d805296"
+	},
+	{
+		"slug" : "hume-on-the-origin-of-government"
+	},
+	{
+		"slug" : "mises-on-popular-errors-and-economic-method"
+	},
+	{
+		"slug" : "tullock-and-scientific-inquiry"
+	},
+	{
+		"slug" : "turnbull-and-god-s-moral-government"
+	},
+	{
+		"slug" : "turnbull-and-natural-philosophy"
+	},
+	{
+		"slug" : "frederick-douglass-and-abolition"
+	},
+	{
+		"slug" : "jefferson-hamilton-debate"
+	},
+	{
+		"slug" : "jefferson-hamilton-debate-session-2"
+	},
+	{
+		"slug" : "jefferson-hamilton-debate-session-3"
+	},
+	{
+		"slug" : "jefferson-hamilton-debate-session-4"
+	},
+	{
+		"slug" : "jefferson-hamilton-debate-session-5"
+	},
+	{
+		"slug" : "jefferson-hamilton-debate-session-6"
+	},
+	{
+		"slug" : "emerson-on-anti-slavery"
+	},
+	{
+		"slug" : "biblical-figures"
+	},
+	{
+		"slug" : "ancient-romans"
+	},
+	{
+		"slug" : "the-virtues"
+	},
+	{
+		"slug" : "shakespeare"
+	},
+	{
+		"slug" : "roman-virtues"
+	},
+	{
+		"slug" : "cobden-liberty-and-peace"
+	},
+	{
+		"slug" : "shakespeare-liberty-and-responsibility"
+	},
+	{
+		"slug" : "constant-s-principles-of-politics"
+	},
+	{
+		"slug" : "mandeville-vice-virtue-and-liberty"
+	},
+	{
+		"slug" : "political-sermons-of-the-founding-era"
+	},
+	{
+		"slug" : "old-testament-and-english-political-thought"
+	},
+	{
+		"slug" : "british-and-french-sources-of-american-constitutionalism"
+	},
+	{
+		"slug" : "burlamaqui-bayle-freedom-tolerance-natural-law"
+	},
+	{
+		"slug" : "thucydides-war-empire-and-liberty"
+	},
+	{
+		"slug" : "hume-smith-and-ferguson-wealth-commerce-and-corruption"
+	},
+	{
+		"slug" : "paine-and-american-liberty"
+	},
+	{
+		"slug" : "hume-history-of-england"
+	},
+	{
+		"slug" : "rousseau-and-hume-contrasting-views-of-liberty"
+	},
+	{
+		"slug" : "shakespeare-and-marlowe-liberty-in-four-plays"
+	},
+	{
+		"slug" : "gibbon-and-the-rise-of-christianity-and-islam"
+	},
+	{
+		"slug" : "tacitus-liberty-and-tyranny-in-the-annals"
+	},
+	{
+		"slug" : "american-liberty-in-political-documents-before-1787"
+	},
+	{
+		"slug" : "the-life-and-times-of-frederick-douglass-1882"
+	},
+	{
+		"slug" : "homer-s-iliad-liberty-and-responsibility"
+	},
+	{
+		"slug" : "milton-liberty-in-his-prose-and-poetry"
+	},
+	{
+		"slug" : "martineau-s-primer-on-laissez-faire-economics"
+	},
+	{
+		"slug" : "bastiat-and-the-state"
+	},
+	{
+		"slug" : "sophocles-and-aeschylus-blood-justice-and-the-founding-of-legal-order"
+	},
+	{
+		"slug" : "timeline-scottish-enlightenment"
+	},
+	{
+		"slug" : "timeline-manchester-school"
+	},
+	{
+		"slug" : "timeline-critique-of-fabian-socialism"
+	},
+	{
+		"slug" : "timeline-life-of-adam-smith-1723-1790"
+	},
+	{
+		"slug" : "chronology-the-itinerary-and-chronology-of-thomas-jefferson"
+	},
+	{
+		"slug" : "timeline-life-of-thomas-jefferson-1743-1826"
+	},
+	{
+		"slug" : "timeline-debate-about-the-divine-right-of-kings"
+	},
+	{
+		"slug" : "timeline-debate-about-the-french-revolution"
+	},
+	{
+		"slug" : "timeline-18th-century-commonwealthmen"
+	},
+	{
+		"slug" : "timeline-the-life-of-john-stuart-mill-1806-1873"
+	},
+	{
+		"slug" : "timeline-the-life-of-david-ricardo-1772-1823"
+	},
+	{
+		"slug" : "banned-books"
+	},
+	{
+		"slug" : "kames-on-progress-and-providence"
+	},
+	{
+		"slug" : "scottish-school-of-common-sense"
+	},
+	{
+		"slug" : "1602-coke-preface-to-the-2nd-part-of-the-reports-pamphlet"
+	},
+	{
+		"slug" : "1658-coke-prohibitions-del-roy-pamphlet"
+	},
+	{
+		"slug" : "1642-propositions-made-by-parliament-and-charles-i-s-answer"
+	},
+	{
+		"slug" : "1649-ball-rule-of-a-free-born-people-pamphlet"
+	},
+	{
+		"slug" : "1649-a-declaration-of-parliament"
+	},
+	{
+		"slug" : "1649-rous-lawfulness-of-obeying-the-present-government-pamphlet"
+	},
+	{
+		"slug" : "1660-milton-a-free-commonwealth-pamphlet"
+	},
+	{
+		"slug" : "1675-shaftesbury-speech-in-parliament-pamphlet"
+	},
+	{
+		"slug" : "1675-shaftesbury-letter-from-a-person-of-quality-pamphlet"
+	},
+	{
+		"slug" : "1692-shower-reasons-for-a-new-bill-of-rights-pamphlet"
+	},
+	{
+		"slug" : "1620-the-mayflower-compact"
+	},
+	{
+		"slug" : "1629-agreement-of-the-massachusetts-bay-company"
+	},
+	{
+		"slug" : "1641-massachusetts-body-of-liberties"
+	},
+	{
+		"slug" : "1647-laws-and-liberties-of-massachusetts"
+	},
+	{
+		"slug" : "1661-act-of-the-general-court-of-mass"
+	},
+	{
+		"slug" : "1637-providence-agreement"
+	},
+	{
+		"slug" : "1642-organization-of-the-government-of-rhode-island"
+	},
+	{
+		"slug" : "1647-acts-and-orders-rhode-island"
+	},
+	{
+		"slug" : "1639-fundamental-orders-of-connecticut"
+	},
+	{
+		"slug" : "1683-charter-of-liberties-and-privileges-new-york"
+	},
+	{
+		"slug" : "1682-charter-of-the-liberties-and-frame-of-government-of-pennsylvania"
+	},
+	{
+		"slug" : "1682-act-for-freedom-of-conscience-penn"
+	},
+	{
+		"slug" : "1701-pennsylvania-charter-of-liberties"
+	},
+	{
+		"slug" : "1638-act-for-church-liberties-maryland"
+	},
+	{
+		"slug" : "1638-act-for-the-liberties-of-the-people-maryland"
+	},
+	{
+		"slug" : "1649-maryland-toleration-act"
+	},
+	{
+		"slug" : "1619-laws-enacted-by-the-first-general-assembly-of-virginia"
+	},
+	{
+		"slug" : "1621-constitution-for-the-council-and-assembly-in-virginia"
+	},
+	{
+		"slug" : "1744-williams-rights-and-liberties-of-protestants-sermon"
+	},
+	{
+		"slug" : "1766-mayhew-the-snare-broken-sermon"
+	},
+	{
+		"slug" : "1776-witherspoon-dominion-of-providence-over-the-passions-of-men-sermon"
+	},
+	{
+		"slug" : "1790-price-discourse-on-the-love-of-our-country-sermon"
+	},
+	{
+		"slug" : "1787-letters-from-the-federal-farmer-no-7-pamphlet"
+	},
+	{
+		"slug" : "1787-brutus-essay-ii-pamphlet"
+	},
+	{
+		"slug" : "1788-amendments-recommended-by-the-several-state-conventions"
+	},
+	{
+		"slug" : "1790-hamilton-first-report-on-public-credit"
+	},
+	{
+		"slug" : "1790-jefferson-memorandum-on-the-compromise-of-1790"
+	},
+	{
+		"slug" : "1791-madison-speech-on-the-bank-bill"
+	},
+	{
+		"slug" : "1801-jefferson-1st-inaugural-address"
+	},
+	{
+		"slug" : "1801-jefferson-1st-annual-message"
+	},
+	{
+		"slug" : "1793-pacificus-hamilton-no-1-pamphlet"
+	},
+	{
+		"slug" : "1793-helvidius-madison-no-1-pamphlet"
+	},
+	{
+		"slug" : "1787-selections-from-the-federalist-pamphlets"
+	},
+	{
+		"slug" : "1644-williams-bloody-tenet-of-persecution-letter"
+	},
+	{
+		"slug" : "1802-jefferson-letter-to-the-danbury-baptist-association-letter"
+	},
+	{
+		"slug" : "1765-resolutions-of-the-stamp-act-congress"
+	},
+	{
+		"slug" : "1763-otis-rights-of-british-colonies-asserted-pamphlet"
+	},
+	{
+		"slug" : "1774-declaration-and-resolves-of-the-1st-continental-congress"
+	},
+	{
+		"slug" : "1776-paine-common-sense-pamphlet"
+	},
+	{
+		"slug" : "1787-northwest-ordinance"
+	},
+	{
+		"slug" : "1787-virginia-and-new-jersey-plans"
+	},
+	{
+		"slug" : "1787-centinel-letter-i-pamphlet"
+	},
+	{
+		"slug" : "1787-brutus-letter-i-pamphlet"
+	},
+	{
+		"slug" : "1787-letters-from-the-federal-famer-letter-no-iii"
+	},
+	{
+		"slug" : "1785-madison-memorial-and-remonstrance-against-religious-assessments"
+	},
+	{
+		"slug" : "1786-jefferson-virginia-bill-establishing-religious-freedom"
+	},
+	{
+		"slug" : "1789-madison-speech-introducing-proposed-amendments-to-the-constitution"
+	},
+	{
+		"slug" : "1787-brutus-essay-v-pamphlet"
+	},
+	{
+		"slug" : "1798-alien-and-sedition-acts"
+	},
+	{
+		"slug" : "1798-virginia-resolutions"
+	},
+	{
+		"slug" : "1798-kentucky-resolutions"
+	},
+	{
+		"slug" : "1798-counter-resolutions-of-other-states"
+	},
+	{
+		"slug" : "1799-report-of-the-virginia-house-of-delegates"
+	},
+	{
+		"slug" : "1791-jefferson-opinion-against-the-constitutionality-of-a-national-bank"
+	},
+	{
+		"slug" : "1791-hamilton-opinion-as-to-the-constiutionality-of-the-bank-of-the-us"
+	},
+	{
+		"slug" : "1787-wilson-address-to-the-people-of-philadelphia-speech"
+	},
+	{
+		"slug" : "1787-p-webster-the-weakness-of-brutus-pamphlet"
+	},
+	{
+		"slug" : "1787-mason-objections-to-the-proposed-constitution-letter"
+	},
+	{
+		"slug" : "1787-ramsay-address-to-the-freemen-of-sth-carolina-speech"
+	},
+	{
+		"slug" : "1787-jay-address-to-the-people-of-n-y-pamphlet"
+	},
+	{
+		"slug" : "1117-articles-of-the-communal-charter-of-amiens"
+	},
+	{
+		"slug" : "vol-1-major-themes"
+	},
+	{
+		"slug" : "vol-5-amendments-i-xii-bill-of-rights"
+	},
+	{
+		"slug" : "vol-2-the-constitution-part-1"
+	},
+	{
+		"slug" : "vol-3-the-constitution-part-2"
+	},
+	{
+		"slug" : "vol-4-the-constitution-part-3"
+	},
+	{
+		"slug" : "ipsa-award"
+	},
+	{
+		"slug" : "bach-music-and-liberty"
+	},
+	{
+		"slug" : "marc-records"
+	},
+	{
+		"slug" : "new-collection-banned-books"
+	},
+	{
+		"slug" : "hide-or-show-the-toc"
+	},
+	{
+		"slug" : "st-augustine-s-city-of-god-introduction"
+	},
+	{
+		"slug" : "madison-on-universal-and-perpetual-peace"
+	},
+	{
+		"slug" : "st-augustine-s-city-of-god-complete-table-of-contents"
+	},
+	{
+		"slug" : "bach-s-christmas-oratorio"
+	},
+	{
+		"slug" : "print-or-view-a-single-chapter-of-a-book"
+	},
+	{
+		"slug" : "clausewitz-war-as-politics-by-other-means"
+	},
+	{
+		"slug" : "get-the-marc-records-for-an-oll-title"
+	},
+	{
+		"slug" : "edit-a-reading-list"
+	},
+	{
+		"slug" : "upanishads-and-philosophy"
+	},
+	{
+		"slug" : "hutcheson-s-moral-philosophy"
+	},
+	{
+		"slug" : "1776-hutchinson-strictures-upon-the-declaration-of-independence"
+	},
+	{
+		"slug" : "use-the-forum"
+	},
+	{
+		"slug" : "use-the-library"
+	},
+	{
+		"slug" : "findley-and-the-american-constitution"
+	},
+	{
+		"slug" : "jevons-the-writings-of-william-stanley-jevons"
+	},
+	{
+		"slug" : "lord-acton-and-friends"
+	},
+	{
+		"slug" : "acton-a-biographical-memoir"
+	},
+	{
+		"slug" : "american-political-writing-during-the-founding-1760-1805"
+	},
+	{
+		"slug" : "1st-batch-of-marc-records-october-2007"
+	},
+	{
+		"slug" : "2nd-batch-of-marc-recods-february-2008"
+	},
+	{
+		"slug" : "james-wilson-and-the-american-constitution"
+	},
+	{
+		"slug" : "the-history-of-james-wilson-s-law-lectures"
+	},
+	{
+		"slug" : "18th-century-british-moral-philosophy"
+	},
+	{
+		"slug" : "webster-and-hayne-on-the-american-constitution"
+	},
+	{
+		"slug" : "sumner-maine-on-the-french-revolution-and-the-end-of-feudal-property"
+	},
+	{
+		"slug" : "maitland-on-english-law-before-the-norman-conquest"
+	},
+	{
+		"slug" : "holdsworth-on-the-law-merchant"
+	},
+	{
+		"slug" : "bryce-on-the-legal-history-of-rome-and-england"
+	},
+	{
+		"slug" : "pollock-on-the-king-s-peace-in-the-middle-ages"
+	},
+	{
+		"slug" : "lenks-on-the-history-of-habeus-corpus"
+	},
+	{
+		"slug" : "de-lolme-and-the-english-constitution"
+	},
+	{
+		"slug" : "john-milton-1608-1674"
+	},
+	{
+		"slug" : "timeline-the-life-and-work-of-john-milton-1608-1674"
+	},
+	{
+		"slug" : "timeline-the-life-and-work-of-john-locke-1632-1704"
+	},
+	{
+		"slug" : "association-of-core-texts-and-courses-plymouth-ma-april-3-6-2008"
+	},
+	{
+		"slug" : "hume-and-revolution"
+	},
+	{
+		"slug" : "create-a-new-or-second-reading-list"
+	},
+	{
+		"slug" : "3rd-batch-of-marc-records-11-april-2008"
+	},
+	{
+		"slug" : "4th-batch-of-marc-records-may-1-2008"
+	},
+	{
+		"slug" : "locke-on-toleration-by-eric-mack"
+	},
+	{
+		"slug" : "shaping-the-constitution-a-view-from-mount-vernon"
+	},
+	{
+		"slug" : "malcolm-on-the-english-revolution-part-1"
+	},
+	{
+		"slug" : "malcolm-on-the-english-revolution-part-2"
+	},
+	{
+		"slug" : "chronology-the-english-revolution"
+	},
+	{
+		"slug" : "chinese-classic-poetry-the-shih-king"
+	},
+	{
+		"slug" : "life-of-goethe"
+	},
+	{
+		"slug" : "dicey-on-law-and-public-opinion-in-the-19th-century"
+	},
+	{
+		"slug" : "books-people-ideas-categories"
+	},
+	{
+		"slug" : "pound-and-the-law"
+	},
+	{
+		"slug" : "example-of-marc-record-template"
+	},
+	{
+		"slug" : "alexander-hamilton-and-the-american-revolution-i"
+	},
+	{
+		"slug" : "alexander-hamilton-and-the-american-revolution-ii"
+	},
+	{
+		"slug" : "chronology-alexander-hamilton"
+	},
+	{
+		"slug" : "pollock-on-the-law-of-torts"
+	},
+	{
+		"slug" : "pollock-s-model-version-of-tort-law"
+	},
+	{
+		"slug" : "pound-on-the-ideal-element-of-law"
+	},
+	{
+		"slug" : "a-legal-glossary-by-roscoe-pound"
+	},
+	{
+		"slug" : "pound-s-bibliography-on-law"
+	},
+	{
+		"slug" : "oakeshott-and-hobbes"
+	},
+	{
+		"slug" : "hobbes-oakeshott-s-introduction-to-leviathan"
+	},
+	{
+		"slug" : "minogue-on-freedom"
+	},
+	{
+		"slug" : "guizot-and-representative-government"
+	},
+	{
+		"slug" : "hayek-a-bibliography-of-his-writings"
+	},
+	{
+		"slug" : "tocqueville-and-liberty"
+	},
+	{
+		"slug" : "buchanan-a-bibliography-of-his-writings"
+	},
+	{
+		"slug" : "condillac-1714-1780"
+	},
+	{
+		"slug" : "condillac-s-economic-thought"
+	},
+	{
+		"slug" : "grampp-on-the-manchester-school-of-economics"
+	},
+	{
+		"slug" : "the-manchester-school-of-economics-by-william-grampp"
+	},
+	{
+		"slug" : "early-republican-economic-policy"
+	},
+	{
+		"slug" : "political-ideas-of-the-classical-economists"
+	},
+	{
+		"slug" : "timeline-the-life-and-work-of-edmund-burke-1729-1797"
+	},
+	{
+		"slug" : "buchanan-on-authentic-tax-reform"
+	},
+	{
+		"slug" : "marcus-aurelius-and-the-scottish-enightenment"
+	},
+	{
+		"slug" : "gardiner-on-the-constitional-issues-of-the-english-revolution"
+	},
+	{
+		"slug" : "leoni-on-the-rule-of-law"
+	},
+	{
+		"slug" : "leoni-on-voting-and-the-market"
+	},
+	{
+		"slug" : "friedman-on-capitalism-and-freedom"
+	},
+	{
+		"slug" : "friedman-on-stability-of-freedom"
+	},
+	{
+		"slug" : "friedman-on-a-volunteer-army"
+	},
+	{
+		"slug" : "newe-bokes-and-articulles"
+	},
+	{
+		"slug" : "rothbard-on-the-public-sector"
+	},
+	{
+		"slug" : "rothbard-s-review-of-leoni-freedom-and-the-law"
+	},
+	{
+		"slug" : "rothbard-on-mencken"
+	},
+	{
+		"slug" : "rothbard-on-the-black-revolution"
+	},
+	{
+		"slug" : "rothbard-on-herbert-hoover"
+	},
+	{
+		"slug" : "raico-on-wilhelm-von-humboldt"
+	},
+	{
+		"slug" : "raico-on-benjamin-constant"
+	},
+	{
+		"slug" : "hamowy-s-critique-of-hayek-s-concept-of-freedom"
+	},
+	{
+		"slug" : "hayek-s-response-to-hamowy-s-critique"
+	},
+	{
+		"slug" : "hayek-on-kinds-of-order-in-society"
+	},
+	{
+		"slug" : "tocqueville-s-critique-of-socialism-1848"
+	},
+	{
+		"slug" : "blackstone-on-consanguity-and-descent"
+	},
+	{
+		"slug" : "blackstone-a-memoir-by-sharswood"
+	},
+	{
+		"slug" : "blackstone-analysis-and-contents-of-vol-1-of-commentaries-on-the-law-of-england"
+	},
+	{
+		"slug" : "blackstone-introduction-to-the-laws-of-england"
+	},
+	{
+		"slug" : "blackstone-on-property-1753"
+	},
+	{
+		"slug" : "mcilwain-on-ancient-constitutionalism"
+	},
+	{
+		"slug" : "william-blake-s-illustrations-of-the-book-of-job"
+	},
+	{
+		"slug" : "blake-william-an-introduction"
+	},
+	{
+		"slug" : "1750-the-code-of-hammurabi-king-translation"
+	},
+	{
+		"slug" : "star-charts-for-ancient-chinese-history"
+	},
+	{
+		"slug" : "ancient-chinese-historical-documents-shu-king"
+	},
+	{
+		"slug" : "shih-king-or-the-book-of-poetry"
+	},
+	{
+		"slug" : "lysander-spooner-1808-1887"
+	},
+	{
+		"slug" : "harriet-taylor-1807-1858"
+	},
+	{
+		"slug" : "thomas-clarkson-history-of-the-abolition-of-the-slave-trade-1808"
+	},
+	{
+		"slug" : "james-mill-commerce-defended-1808"
+	},
+	{
+		"slug" : "jane-marcet-1769-1858"
+	},
+	{
+		"slug" : "j-a-hobson-1858-1940"
+	},
+	{
+		"slug" : "h-b-acton-1908-1974"
+	},
+	{
+		"slug" : "anniversaries-of-note-in-2009"
+	},
+	{
+		"slug" : "anniversaries-of-note-in-2008"
+	},
+	{
+		"slug" : "spooner-on-natural-law-1882"
+	},
+	{
+		"slug" : "vattel-s-law-of-nations-1758"
+	},
+	{
+		"slug" : "anniversaries-of-note-in-2007"
+	},
+	{
+		"slug" : "mary-wollstonecraft-1759-1797"
+	},
+	{
+		"slug" : "title-pages-of-lf-books-catalogs"
+	},
+	{
+		"slug" : "1215-magna-carta-latin-and-engish"
+	},
+	{
+		"slug" : "magna-carta-in-16th-century-english-legal-thought"
+	},
+	{
+		"slug" : "roots-of-liberty-magna-carta-2008"
+	},
+	{
+		"slug" : "pope-alexander-a-biographical-sketch"
+	},
+	{
+		"slug" : "puritanism-and-liberty-by-woodhouse"
+	},
+	{
+		"slug" : "1647-the-putney-debates"
+	},
+	{
+		"slug" : "pocket-guide-to-political-and-civic-rights"
+	},
+	{
+		"slug" : "john-calvin-1509-1564"
+	},
+	{
+		"slug" : "co-sponsored-program"
+	},
+	{
+		"slug" : "publishing-program"
+	},
+	{
+		"slug" : "darwin-s-historical-sketch-on-the-origin-of-species"
+	},
+	{
+		"slug" : "charles-darwin-s-origin-of-species-1859"
+	},
+	{
+		"slug" : "charles-darwin-1809-1882"
+	},
+	{
+		"slug" : "abbe-de-mably-1709-1785"
+	},
+	{
+		"slug" : "thomas-paine-1737-1809"
+	},
+	{
+		"slug" : "frank-taussig-1859-1940"
+	},
+	{
+		"slug" : "lord-macaulay-1800-1859"
+	},
+	{
+		"slug" : "alexis-de-tocqueville-1805-1859"
+	},
+	{
+		"slug" : "william-shakespeare-s-sonnets-1609"
+	},
+	{
+		"slug" : "voltaire-s-candide-1759"
+	},
+	{
+		"slug" : "john-stuart-mill-s-on-liberty-1859"
+	},
+	{
+		"slug" : "samuel-smiles-self-help-1859"
+	},
+	{
+		"slug" : "latin-terminology"
+	},
+	{
+		"slug" : "1787-madison-s-notes-of-debates-in-the-federal-convention"
+	},
+	{
+		"slug" : "madison-s-notes-analytical-index-elliot-ed"
+	},
+	{
+		"slug" : "madison-s-notes-analytical-table-of-contents-elliot-ed"
+	},
+	{
+		"slug" : "madison-s-notes-analytical-index-hunt-ed"
+	},
+	{
+		"slug" : "acton-creighton-correspondence-1887"
+	},
+	{
+		"slug" : "timeline-the-life-of-pierre-f-goodrich-1896-1973"
+	},
+	{
+		"slug" : "toc-of-liberty-fund-s-edition-of-bastiat-s-works-french"
+	},
+	{
+		"slug" : "toc-of-guillaumin-edition-of-bastiat-s-works-french"
+	},
+	{
+		"slug" : "anti-federalists-a-bibliography"
+	},
+	{
+		"slug" : "dante-on-monarchy"
+	},
+	{
+		"slug" : "sir-alan-walters-1926-2009"
+	},
+	{
+		"slug" : "max-hartwell-1921-2009"
+	},
+	{
+		"slug" : "acton-on-moral-judgements-in-history"
+	},
+	{
+		"slug" : "benedict-s-rule"
+	},
+	{
+		"slug" : "darwin-s-diagram-showing-descent"
+	},
+	{
+		"slug" : "hutcheson-s-annotated-table-of-contents-to-philosophiae-moralis"
+	},
+	{
+		"slug" : "monuments-to-free-trade-bastiat-and-cobden"
+	},
+	{
+		"slug" : "blackstone-on-the-absolute-rights-of-individuals-1753"
+	},
+	{
+		"slug" : "mcculloch-sketch-of-adam-smith"
+	},
+	{
+		"slug" : "mcculloch-sketch-of-david-ricardo"
+	},
+	{
+		"slug" : "lalor-s-cyclopedia-preface-and-table-of-contents"
+	},
+	{
+		"slug" : "walker-on-public-revenue-1899"
+	},
+	{
+		"slug" : "walker-on-the-wage-fund-1899"
+	},
+	{
+		"slug" : "walker-on-wages-1899"
+	},
+	{
+		"slug" : "pollock-on-the-oath-of-allegiance-in-english-history"
+	},
+	{
+		"slug" : "mcculloch-on-the-corn-laws"
+	},
+	{
+		"slug" : "mcculloch-on-the-balance-of-trade"
+	},
+	{
+		"slug" : "mcculloch-on-smuggling"
+	},
+	{
+		"slug" : "lalor-s-cyclopedia-19thc-french-political-economy"
+	},
+	{
+		"slug" : "molinari-on-protectionism"
+	},
+	{
+		"slug" : "faucher-on-property"
+	},
+	{
+		"slug" : "garnier-on-the-origin-of-the-term-laissez-faire"
+	},
+	{
+		"slug" : "garnier-on-the-physiocrats"
+	},
+	{
+		"slug" : "bastiat-spoliation-by-law"
+	},
+	{
+		"slug" : "bastiat-plenty-and-dearth"
+	},
+	{
+		"slug" : "coquelin-on-political-economy"
+	},
+	{
+		"slug" : "coquelin-on-competititon"
+	},
+	{
+		"slug" : "coquelin-on-industry"
+	},
+	{
+		"slug" : "say-on-markets"
+	},
+	{
+		"slug" : "pufendorf-and-universal-jurisprudence"
+	},
+	{
+		"slug" : "stael-and-the-french-revolution"
+	},
+	{
+		"slug" : "stael-life-and-works"
+	},
+	{
+		"slug" : "frank-a-fetter-a-bibliography"
+	},
+	{
+		"slug" : "chronology-the-life-and-work-of-ludwig-von-mises"
+	},
+	{
+		"slug" : "mises-major-translated-writings"
+	},
+	{
+		"slug" : "timeline-life-and-work-of-ludwig-von-mises-1881-1973"
+	},
+	{
+		"slug" : "thierry-augustin-1795-1856"
+	},
+	{
+		"slug" : "thierry-on-conquest-class-and-the-theory-of-history"
+	},
+	{
+		"slug" : "william-the-conqueror-and-the-kentishmen"
+	},
+	{
+		"slug" : "florestan-laments-the-loss-of-his-liberty-for-speaking-the-truth"
+	},
+	{
+		"slug" : "verdi-s-aida-1871"
+	},
+	{
+		"slug" : "wilde-salome-1894"
+	},
+	{
+		"slug" : "goodrich-liberty-fund-book-list"
+	},
+	{
+		"slug" : "kipling-the-gods-of-the-copybook-heading"
+	},
+	{
+		"slug" : "pufendorf-and-the-geometry-of-morality"
+	},
+	{
+		"slug" : "etienne-de-la-boetie-discourse-of-voluntary-servitude-1576"
+	},
+	{
+		"slug" : "pound-on-the-philosophy-of-law-property"
+	},
+	{
+		"slug" : "atkinson-protection-promotes-war-free-trade-promotes-peace"
+	},
+	{
+		"slug" : "overton-an-arrow-against-all-tyrants-1646"
+	},
+	{
+		"slug" : "constant-the-liberty-of-ancients-compared-with-that-of-moderns-1819"
+	},
+	{
+		"slug" : "jay-john-1745-1829"
+	},
+	{
+		"slug" : "randolph-john-1773-1833"
+	},
+	{
+		"slug" : "clinton-george-1739-1812"
+	},
+	{
+		"slug" : "paul-the-liberty-and-property-defence-league"
+	},
+	{
+		"slug" : "1750-the-code-of-hammurabi-johns-translation"
+	},
+	{
+		"slug" : "the-economic-and-ethical-thought-of-paul-heyne"
+	},
+	{
+		"slug" : "heyne-economics-as-a-way-of-thinking"
+	},
+	{
+		"slug" : "spooner-taxation-and-the-common-law-1852"
+	},
+	{
+		"slug" : "1640-1-the-triennial-act"
+	},
+	{
+		"slug" : "1641-the-tonnage-and-poundage-act"
+	},
+	{
+		"slug" : "1641-the-act-for-the-abolition-of-the-court-of-star-chamber"
+	},
+	{
+		"slug" : "1641-the-act-for-the-abolition-of-the-court-of-high-commission"
+	},
+	{
+		"slug" : "1648-9-the-agreement-of-the-people"
+	},
+	{
+		"slug" : "1647-the-agreement-of-the-people-as-presented-to-the-council-of-the-army"
+	},
+	{
+		"slug" : "bailey-on-lucretius-s-philosophy"
+	},
+	{
+		"slug" : "guizot-francois-1787-1874"
+	},
+	{
+		"slug" : "guizot-on-the-rise-of-the-free-cities"
+	},
+	{
+		"slug" : "bagehot-a-memoir-by-hutton"
+	},
+	{
+		"slug" : "vattel-life-and-works"
+	},
+	{
+		"slug" : "acton-s-ideas-as-revealed-by-his-correspondence"
+	},
+	{
+		"slug" : "savonarola-on-christian-belief"
+	},
+	{
+		"slug" : "spencer-on-education"
+	},
+	{
+		"slug" : "spencer-on-the-tyranny-of-fashion-1854"
+	},
+	{
+		"slug" : "personal-rights-association"
+	},
+	{
+		"slug" : "mencius-a-life"
+	},
+	{
+		"slug" : "mencius-opinions-and-influence"
+	},
+	{
+		"slug" : "confucius-influence-and-doctrines"
+	},
+	{
+		"slug" : "timeline-the-history-of-liberty-fund-1960-2010"
+	},
+	{
+		"slug" : "timeline-the-life-and-work-of-herbert-spencer-1820-1903"
+	},
+	{
+		"slug" : "timeline-the-life-and-works-of-frederic-bastiat-1801-1850"
+	},
+	{
+		"slug" : "1736-brief-narrative-of-the-trial-of-peter-zenger"
+	},
+	{
+		"slug" : "business-in-english-literature"
+	},
+	{
+		"slug" : "library-of-congress-web-archive-minerva"
+	},
+	{
+		"slug" : "tocqueville-s-democracy-in-america"
+	},
+	{
+		"slug" : "shaftesbury-s-illustrations-for-characteristicks-1732"
+	},
+	{
+		"slug" : "selgin-on-free-banking"
+	},
+	{
+		"slug" : "history-of-english-law"
+	},
+	{
+		"slug" : "manuel-ayau-1925-2010"
+	},
+	{
+		"slug" : "cato-and-republican-liberty"
+	},
+	{
+		"slug" : "toc-of-liberty-fund-s-edition-of-bastiat-s-works-english"
+	},
+	{
+		"slug" : "bastiat-chrono-list"
+	},
+	{
+		"slug" : "washington-and-napoleon-in-their-study"
+	},
+	{
+		"slug" : "the-divine-right-of-kings-or-regal-tyranny-hobbes-and-lilburne"
+	},
+	{
+		"slug" : "anniversaries-of-note-in-2011-people"
+	},
+	{
+		"slug" : "liberty-slaying-the-monsters-of-tyranny-and-oppression"
+	},
+	{
+		"slug" : "images-of-the-british-abolitionist-movement"
+	},
+	{
+		"slug" : "james-gillray-on-war-and-taxes-during-the-war-against-napoleon"
+	},
+	{
+		"slug" : "a-monument-to-frederic-bastiat-1878"
+	},
+	{
+		"slug" : "lilburne-quoting-coke-on-english-liberties-at-his-treason-trial-1649"
+	},
+	{
+		"slug" : "the-tres-riches-heures-du-duc-de-berry-1416"
+	},
+	{
+		"slug" : "thomas-jefferson-in-the-cyclopedia"
+	},
+	{
+		"slug" : "presidents-day-and-the-apotheosis-of-washington"
+	},
+	{
+		"slug" : "mill-s-spirit-of-the-age"
+	},
+	{
+		"slug" : "algernon-sidney-1622-1683-and-the-thomas-hollis-library-of-liberty"
+	},
+	{
+		"slug" : "locke-on-religious-toleration-by-mark-goldie"
+	},
+	{
+		"slug" : "locke-and-religious-toleration"
+	},
+	{
+		"slug" : "chronology-of-john-locke-s-life"
+	},
+	{
+		"slug" : "abraham-lincoln-as-the-federal-phoenix-1864"
+	},
+	{
+		"slug" : "new-playing-cards-for-the-french-republic-1793-94"
+	},
+	{
+		"slug" : "brueghel-taxes-and-the-numeration-of-the-people-of-bethlehem-1566"
+	},
+	{
+		"slug" : "paired-quotes-and-images-of-the-week"
+	},
+	{
+		"slug" : "the-spanish-american-war-and-the-anti-imperialism-league-1902"
+	},
+	{
+		"slug" : "jacques-callot-hugo-grotius-and-the-miseries-of-war-in-the-17th-century"
+	},
+	{
+		"slug" : "anniversaries-of-note-in-2012-books"
+	},
+	{
+		"slug" : "leveller-tracts-table-of-contents"
+	},
+	{
+		"slug" : "leveller-tracts-bibliography"
+	},
+	{
+		"slug" : "leveller-tracts-introductory-note"
+	},
+	{
+		"slug" : "anniversaries-of-note-in-2012-people"
+	},
+	{
+		"slug" : "anniversaries-of-note-in-2013-books"
+	},
+	{
+		"slug" : "mises-on-rationing-and-price-controls-in-ww2"
+	},
+	{
+		"slug" : "anniversaries-of-note-in-2013-people"
+	},
+	{
+		"slug" : "eugene-delacroix-on-press-censorship-during-the-restoration-1814-1822"
+	},
+	{
+		"slug" : "quotations-by-bastiat-on-the-state-and-the-free-market"
+	},
+	{
+		"slug" : "the-gold-standard-vs-fiat-paper-money"
+	},
+	{
+		"slug" : "cato-book-forum-bastiat-vol-1"
+	},
+	{
+		"slug" : "selected-quotations-from-bastiat-s-collected-works-vol-1"
+	},
+	{
+		"slug" : "tocqueville-and-bastiat-on-the-1848-revolution-in-paris"
+	},
+	{
+		"slug" : "new-picture-of-tocqueville-in-1848"
+	},
+	{
+		"slug" : "charles-darwin-and-spontaneous-order"
+	},
+	{
+		"slug" : "ludwig-von-mises-on-rationing-in-ww2"
+	},
+	{
+		"slug" : "petrarch-s-love-poem-for-laura"
+	},
+	{
+		"slug" : "shakespeare-in-love"
+	},
+	{
+		"slug" : "marching-with-molinari-towards-liberty"
+	},
+	{
+		"slug" : "richard-cobden-s-i-have-a-dream-speech-1846"
+	},
+	{
+		"slug" : "resources-on-bastiat"
+	},
+	{
+		"slug" : "quotations-for-presidents-day-february-20-2012"
+	},
+	{
+		"slug" : "adam-smith-and-j-b-say-on-the-division-of-labour"
+	},
+	{
+		"slug" : "calendar-of-anniversaries"
+	},
+	{
+		"slug" : "additions-in-2012"
+	},
+	{
+		"slug" : "mises-on-monetary-and-economic-problems-before-during-and-after-ww1"
+	},
+	{
+		"slug" : "declaration-of-the-rights-of-man-and-of-the-citizen"
+	},
+	{
+		"slug" : "molinari-revised-chapters-1-3-6-11"
+	},
+	{
+		"slug" : "major-collections-in-the-oll-the-collected-works-of-key-figures"
+	},
+	{
+		"slug" : "major-collections-in-the-oll-the-founding-fathers-of-the-american-republic"
+	},
+	{
+		"slug" : "lm-locke"
+	},
+	{
+		"slug" : "james-m-buchanan-1919-2013"
+	},
+	{
+		"slug" : "the-best-of-bastiat-1-the-law-june-1850"
+	},
+	{
+		"slug" : "about-liberty-matters"
+	},
+	{
+		"slug" : "the-best-of-bastiat-2-the-state-1848"
+	},
+	{
+		"slug" : "quotations-about-liberty-and-power-2004-2012"
+	},
+	{
+		"slug" : "geoffrey-brennan-james-buchanan-an-assessment-march-2013"
+	},
+	{
+		"slug" : "about-the-best-of-the-oll-anthology"
+	},
+	{
+		"slug" : "about-the-best-of-bastiat"
+	},
+	{
+		"slug" : "52-quotations-about-war-and-peace"
+	},
+	{
+		"slug" : "samuel-warns-the-israelites-of-the-dangers-of-kings"
+	},
+	{
+		"slug" : "quotations-about-property-rights"
+	},
+	{
+		"slug" : "roderick-long-gustave-de-molinari-s-legacy-for-liberty-may-2013"
+	},
+	{
+		"slug" : "new-titles-for-fy-2013-14"
+	},
+	{
+		"slug" : "did-bastiat-say-when-goods-don-t-cross-borders-soldiers-will"
+	},
+	{
+		"slug" : "acton"
+	},
+	{
+		"slug" : "about-us"
+	},
+	{
+		"slug" : "american-constitution"
+	},
+	{
+		"slug" : "anniversaries"
+	},
+	{
+		"slug" : "audio"
+	},
+	{
+		"slug" : "bastiat"
+	},
+	{
+		"slug" : "bibliographies"
+	},
+	{
+		"slug" : "biographies"
+	},
+	{
+		"slug" : "oll-reader"
+	},
+	{
+		"slug" : "books-d6703d3d-091e-4f18-9644-de37499b56dd"
+	},
+	{
+		"slug" : "buchanan"
+	},
+	{
+		"slug" : "copyright"
+	},
+	{
+		"slug" : "economics"
+	},
+	{
+		"slug" : "english-revolution"
+	},
+	{
+		"slug" : "essays-on-key-authors"
+	},
+	{
+		"slug" : "french-revolution"
+	},
+	{
+		"slug" : "goodrich-sr"
+	},
+	{
+		"slug" : "guides"
+	},
+	{
+		"slug" : "hayek"
+	},
+	{
+		"slug" : "history"
+	},
+	{
+		"slug" : "images-of-liberty"
+	},
+	{
+		"slug" : "key-documents"
+	},
+	{
+		"slug" : "law"
+	},
+	{
+		"slug" : "liberty-matters"
+	},
+	{
+		"slug" : "literature"
+	},
+	{
+		"slug" : "marc"
+	},
+	{
+		"slug" : "mill-j-s"
+	},
+	{
+		"slug" : "mises"
+	},
+	{
+		"slug" : "molinari"
+	},
+	{
+		"slug" : "music"
+	},
+	{
+		"slug" : "news"
+	},
+	{
+		"slug" : "obituaries"
+	},
+	{
+		"slug" : "philosophy"
+	},
+	{
+		"slug" : "political-thought"
+	},
+	{
+		"slug" : "quotes"
+	},
+	{
+		"slug" : "reading-lists"
+	},
+	{
+		"slug" : "religion"
+	},
+	{
+		"slug" : "ricardo"
+	},
+	{
+		"slug" : "science"
+	},
+	{
+		"slug" : "smith"
+	},
+	{
+		"slug" : "sociology"
+	},
+	{
+		"slug" : "timelines"
+	},
+	{
+		"slug" : "tocqueville"
+	},
+	{
+		"slug" : "user-tips"
+	},
+	{
+		"slug" : "video-viewing-guides"
+	},
+	{
+		"slug" : "war"
+	},
+	{
+		"slug" : "mill-james"
+	},
+	{
+		"slug" : "a-snapshot-of-oll-activity-on-10th-november-2017"
+	},
+	{
+		"slug" : "about"
+	},
+	{
+		"slug" : "awards"
+	},
+	{
+		"slug" : "founders-constitution"
+	},
+	{
+		"slug" : "professional-meetings"
+	},
+	{
+		"slug" : "recent-additions"
+	},
+	{
+		"slug" : "people"
+	},
+	{
+		"slug" : "ideas"
+	},
+	{
+		"slug" : "books-and-titles"
+	},
+	{
+		"slug" : "burke"
+	},
+	{
+		"slug" : "best-of-bastiat"
+	},
+	{
+		"slug" : "forgotten-gems"
+	},
+	{
+		"slug" : "anthologies"
+	},
+	{
+		"slug" : "selected-readings"
+	},
+	{
+		"slug" : "quentin-taylor-the-federalist-papers-america-s-political-classic"
+	},
+	{
+		"slug" : "eric-mack-an-introduction-to-the-political-thought-of-john-locke"
+	},
+	{
+		"slug" : "locke"
+	},
+	{
+		"slug" : "james-tyrrell-on-authority-and-liberty"
+	},
+	{
+		"slug" : "mises-on-gresham-s-law-and-ancient-greek-silver-coins"
+	},
+	{
+		"slug" : "sociology-and-history"
+	},
+	{
+		"slug" : "bastiat-and-political-economy"
+	},
+	{
+		"slug" : "system-of-liberty"
+	},
+	{
+		"slug" : "intellectual-reinforcement-for-capitalism"
+	},
+	{
+		"slug" : "seldon-and-the-iea"
+	},
+	{
+		"slug" : "guides-key-authors"
+	},
+	{
+		"slug" : "resources-on-u-s-constitution"
+	},
+	{
+		"slug" : "misestmc"
+	},
+	{
+		"slug" : "mises-major-writings"
+	},
+	{
+		"slug" : "mises-resources"
+	},
+	{
+		"slug" : "banned-books-7ffb7000-5c22-40c5-8b55-c2a15f98ac87"
+	},
+	{
+		"slug" : "library-of-law-and-liberty"
+	},
+	{
+		"slug" : "lm-grotius"
+	},
+	{
+		"slug" : "first-things"
+	},
+	{
+		"slug" : "search-example"
+	},
+	{
+		"slug" : "montesquieu-mes-pensees"
+	},
+	{
+		"slug" : "works-of-spooner"
+	},
+	{
+		"slug" : "will-my-old-links-work"
+	},
+	{
+		"slug" : "book-citations"
+	},
+	{
+		"slug" : "tocqueville-s-new-science-of-politics"
+	},
+	{
+		"slug" : "leveller-tracts-listed-by-author"
+	},
+	{
+		"slug" : "ludwig-von-mises-liberty-and-property-1958"
+	},
+	{
+		"slug" : "advanced-search-tips"
+	},
+	{
+		"slug" : "missing-links"
+	},
+	{
+		"slug" : "lm-mccloskey"
+	},
+	{
+		"slug" : "new-socialist-ideas-in-1848"
+	},
+	{
+		"slug" : "library-images"
+	},
+	{
+		"slug" : "major-political-thinkers"
+	},
+	{
+		"slug" : "collected-liberty-matters"
+	},
+	{
+		"slug" : "new-essays-and-guides"
+	},
+	{
+		"slug" : "lm-mill"
+	},
+	{
+		"slug" : "essays"
+	},
+	{
+		"slug" : "lpl-editorials"
+	},
+	{
+		"slug" : "lm-spencer"
+	},
+	{
+		"slug" : "cobden-and-the-anti-corn-law-league"
+	},
+	{
+		"slug" : "lm-cobden"
+	},
+	{
+		"slug" : "ebeling-introductions"
+	},
+	{
+		"slug" : "leveller-tracts-1"
+	},
+	{
+		"slug" : "leveller-tracts-2"
+	},
+	{
+		"slug" : "leveller-tracts-4"
+	},
+	{
+		"slug" : "leveller-tracts-6"
+	},
+	{
+		"slug" : "lm-ideas"
+	},
+	{
+		"slug" : "lm-bawerk"
+	},
+	{
+		"slug" : "libertymatters-mc"
+	},
+	{
+		"slug" : "leveller-tracts-title-page-images"
+	},
+	{
+		"slug" : "leveller-tracts-5"
+	},
+	{
+		"slug" : "leveller-tracts-7"
+	},
+	{
+		"slug" : "leveller-tracts-8"
+	},
+	{
+		"slug" : "leveller-tracts-9"
+	},
+	{
+		"slug" : "leveller-tracts-3"
+	},
+	{
+		"slug" : "leveller-tracts-2nd-2"
+	},
+	{
+		"slug" : "leveller-tracts-2nd-1"
+	},
+	{
+		"slug" : "leveller-tracts-2nd-3"
+	},
+	{
+		"slug" : "leveller-tracts-2nd-4"
+	},
+	{
+		"slug" : "leveller-tracts-2nd-5"
+	},
+	{
+		"slug" : "leveller-tracts-2nd-6"
+	},
+	{
+		"slug" : "leveller-tracts-2nd-7"
+	},
+	{
+		"slug" : "leveller-tracts-summary"
+	},
+	{
+		"slug" : "art-of-levellers"
+	},
+	{
+		"slug" : "lm-jsm"
+	},
+	{
+		"slug" : "fb-readersguide"
+	},
+	{
+		"slug" : "fb-earlywritings"
+	},
+	{
+		"slug" : "fb-pariswritings1"
+	},
+	{
+		"slug" : "fb-pariswritings2"
+	},
+	{
+		"slug" : "fb-treatises"
+	},
+	{
+		"slug" : "cdf6ef56-ea5f-4917-bfca-161aed016126"
+	},
+	{
+		"slug" : "leveller-tracts-10"
+	},
+	{
+		"slug" : "works-of-spooner-images"
+	},
+	{
+		"slug" : "new-oll-titles"
+	},
+	{
+		"slug" : "enhanced-books"
+	},
+	{
+		"slug" : "grotius-war-peace"
+	},
+	{
+		"slug" : "john-locke-two-treatises-1689"
+	},
+	{
+		"slug" : "humboldt-government"
+	},
+	{
+		"slug" : "leveller-tracts"
+	},
+	{
+		"slug" : "bastiat-works"
+	},
+	{
+		"slug" : "spooner-works"
+	},
+	{
+		"slug" : "works-of-spooner-1"
+	},
+	{
+		"slug" : "works-of-spooner-2"
+	},
+	{
+		"slug" : "works-of-spooner-3"
+	},
+	{
+		"slug" : "works-of-spooner-4"
+	},
+	{
+		"slug" : "works-of-spooner-5"
+	},
+	{
+		"slug" : "james-mills-political-works"
+	},
+	{
+		"slug" : "james-mills-political-works-tps"
+	},
+	{
+		"slug" : "james-mills-political-writings"
+	},
+	{
+		"slug" : "gordon-discourses-images"
+	},
+	{
+		"slug" : "gordons-discourses"
+	},
+	{
+		"slug" : "lm-jasay"
+	},
+	{
+		"slug" : "guenin"
+	},
+	{
+		"slug" : "lm-montesquieu"
+	},
+	{
+		"slug" : "bastiat-project-summary"
+	},
+	{
+		"slug" : "spooner-project-summary"
+	},
+	{
+		"slug" : "introduction-to-liberty"
+	},
+	{
+		"slug" : "spooner-collected-works"
+	},
+	{
+		"slug" : "collected-sophisms"
+	},
+	{
+		"slug" : "wswns"
+	},
+	{
+		"slug" : "leveller-tracts-2nd-toc"
+	},
+	{
+		"slug" : "lm-spooner"
+	},
+	{
+		"slug" : "lt007"
+	},
+	{
+		"slug" : "leveller-tracts-and-pamphlets"
+	},
+	{
+		"slug" : "drafts-of-the-lf-translation"
+	},
+	{
+		"slug" : "introduction-to-cobden-and-the-league"
+	},
+	{
+		"slug" : "readings"
+	},
+	{
+		"slug" : "oll-reader-70"
+	},
+	{
+		"slug" : "oll-reader-72"
+	},
+	{
+		"slug" : "oll-reader-71"
+	},
+	{
+		"slug" : "oll-reader-73"
+	},
+	{
+		"slug" : "the-utopian-17-january-1847"
+	},
+	{
+		"slug" : "lt282"
+	},
+	{
+		"slug" : "gdm-soirees"
+	},
+	{
+		"slug" : "lm-intervention"
+	},
+	{
+		"slug" : "lm-levy"
+	},
+	{
+		"slug" : "bastiat-class"
+	},
+	{
+		"slug" : "lm-shakespeare"
+	},
+	{
+		"slug" : "leveller-conference1"
+	},
+	{
+		"slug" : "leveller-anthology-agreements"
+	},
+	{
+		"slug" : "lm-trenchard"
+	},
+	{
+		"slug" : "lm-class"
+	},
+	{
+		"slug" : "oll-reader-25"
+	},
+	{
+		"slug" : "ngrams-class"
+	},
+	{
+		"slug" : "lm-pufendorf"
+	},
+	{
+		"slug" : "oll-reader-74"
+	},
+	{
+		"slug" : "lm-kirzner"
+	},
+	{
+		"slug" : "lm-douglass"
+	},
+	{
+		"slug" : "cw4"
+	},
+	{
+		"slug" : "fb-chronology"
+	},
+	{
+		"slug" : "budget1848"
+	},
+	{
+		"slug" : "fb-furtheraspects"
+	},
+	{
+		"slug" : "frenchstate"
+	},
+	{
+		"slug" : "jb-life"
+	},
+	{
+		"slug" : "lm-sumner"
+	},
+	{
+		"slug" : "oll-reader-75"
+	},
+	{
+		"slug" : "oll-reader-11"
+	},
+	{
+		"slug" : "sumner-laissezfaire"
+	},
+	{
+		"slug" : "sumner-free-trade"
+	},
+	{
+		"slug" : "sumner-bequests"
+	},
+	{
+		"slug" : "fb-exchange"
+	},
+	{
+		"slug" : "lm-hayek"
+	},
+	{
+		"slug" : "encyclopedic-industry"
+	},
+	{
+		"slug" : "lm-tullock"
+	},
+	{
+		"slug" : "oll-projects"
+	},
+	{
+		"slug" : "lm-hume"
+	},
+	{
+		"slug" : "ruling-class-anthology"
+	},
+	{
+		"slug" : "ruling-class-reader"
+	},
+	{
+		"slug" : "rc-overton"
+	},
+	{
+		"slug" : "rc-horse"
+	},
+	{
+		"slug" : "rc-walwyn"
+	},
+	{
+		"slug" : "adam-smith-on-class-selections"
+	},
+	{
+		"slug" : "rc-cairnes"
+	},
+	{
+		"slug" : "rc-cobbett"
+	},
+	{
+		"slug" : "rc-herbert1"
+	},
+	{
+		"slug" : "rc-herbert2"
+	},
+	{
+		"slug" : "rc-spooner1"
+	},
+	{
+		"slug" : "rc-spooner2"
+	},
+	{
+		"slug" : "rc-sumner1"
+	},
+	{
+		"slug" : "rc-sumner2"
+	},
+	{
+		"slug" : "rc-sumner3"
+	},
+	{
+		"slug" : "bastiat-the-law-revised-lf-edition"
+	},
+	{
+		"slug" : "fb-law"
+	},
+	{
+		"slug" : "lm-diderot"
+	},
+	{
+		"slug" : "lm-constant"
+	},
+	{
+		"slug" : "lt078"
+	},
+	{
+		"slug" : "realwhig"
+	},
+	{
+		"slug" : "state-lf"
+	},
+	{
+		"slug" : "socialism"
+	},
+	{
+		"slug" : "shaw-s-fabian-manifesto-1884"
+	},
+	{
+		"slug" : "socialist-tracts"
+	},
+	{
+		"slug" : "test-parallel-marx"
+	},
+	{
+		"slug" : "lm-lachmann"
+	},
+	{
+		"slug" : "marx-works"
+	},
+	{
+		"slug" : "marx-k1-1867"
+	},
+	{
+		"slug" : "marx-manifest"
+	},
+	{
+		"slug" : "abschluss"
+	},
+	{
+		"slug" : "completion"
+	},
+	{
+		"slug" : "marx-k1-1890"
+	},
+	{
+		"slug" : "marx-k2"
+	},
+	{
+		"slug" : "marx-k3a"
+	},
+	{
+		"slug" : "marx-k3b"
+	},
+	{
+		"slug" : "marx-manifesto"
+	},
+	{
+		"slug" : "reader-bastiat-fraternity"
+	},
+	{
+		"slug" : "reader-molinari-socialism"
+	},
+	{
+		"slug" : "reader-smith-socialism"
+	},
+	{
+		"slug" : "reader-donisthorpe"
+	},
+	{
+		"slug" : "reader-spencer-bondage"
+	},
+	{
+		"slug" : "reader-guyot-socialism"
+	},
+	{
+		"slug" : "reader-mackay-workingclass"
+	},
+	{
+		"slug" : "reader-bawerk-marx"
+	},
+	{
+		"slug" : "reader-herbert-compulsion"
+	},
+	{
+		"slug" : "reader-mises-inteventionism"
+	},
+	{
+		"slug" : "reader-acton-marxism"
+	},
+	{
+		"slug" : "reader-mill-socialism"
+	},
+	{
+		"slug" : "reader-mises-economiccalculation"
+	},
+	{
+		"slug" : "reader-richter-socialism"
+	},
+	{
+		"slug" : "reader-tocqueville-socialism"
+	},
+	{
+		"slug" : "oll-reader-87"
+	},
+	{
+		"slug" : "oll-reader-88"
+	},
+	{
+		"slug" : "lm-marx"
+	},
+	{
+		"slug" : "lm-pareto"
+	},
+	{
+		"slug" : "lt104"
+	},
+	{
+		"slug" : "great-books"
+	},
+	{
+		"slug" : "bentham-toc"
+	},
+	{
+		"slug" : "lm-fetter"
+	},
+	{
+		"slug" : "cw5"
+	},
+	{
+		"slug" : "lm-stael"
+	},
+	{
+		"slug" : "pairings"
+	},
+	{
+		"slug" : "cw5-appendix"
+	},
+	{
+		"slug" : "lm-harmonies"
+	},
+	{
+		"slug" : "lm-subjects"
+	},
+	{
+		"slug" : "lm-leggett"
+	},
+	{
+		"slug" : "gdm-works"
+	},
+	{
+		"slug" : "molinari-project-summary"
+	},
+	{
+		"slug" : "gdm-soirees3"
+	}
+]
