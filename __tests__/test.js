@@ -15,7 +15,7 @@ log4js.configure({
   categories: { default: { appenders: ['logs'], level: 'trace' } }
 });
 
-var testLog = log4js.getLogger('logs');
+const testLog = log4js.getLogger('logs');
 
 let i = 0;
 let numberOfLinks = Object.keys(data).length;
