@@ -1,0 +1,37 @@
+.container{
+  border: 3px solid;
+  border-color: blueviolet; 
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.url{
+  border-bottom: 5px solid;
+  border-color: black
+}
+.status{
+  background-color: blue
+}
+
+.diff-body{
+  font-size: 10px;
+  margin-top: -15px;
+}
+.diff-title{
+  margin-top: 25px;
+  font-size: 10px;
+}
+del{
+  background-color: chartreuse;
+  font-size: 13px;
+}
+
+ins{
+  background-color: cadetblue;
+  font-size: 13px;
+}
+
+.App{
+  border: 3px;
+  border-color: red;
+}

@@ -1,12 +1,12 @@
 const DEFAULT_TIMEOUT = 120000; // 2 Minutes
-const SCREENSHOT_DIR = '__tests__/screenshots';
-const LOGS_DIR = '__tests__/logs'
+const SCREENSHOT_DIR = 'test/__tests__/screenshots';
+const LOGS_DIR = 'test/__tests__/logs'
 const log4js = require('log4js');
 const data = require('../constanst/data.json');
 const fs = require("fs");
 const PROD_URL = 'http://oll.libertyfund.org/pages';
 const STAGE_URL = 'https://jfcote87dev.wpengine.com/pages'
-
+const Diff = require('text-diff');
 const TITLE_SELECTOR = '#PageDiv > h1';
 const ARTICLE_SELECTOR = 'section.pages';
 
@@ -30,13 +30,17 @@ async function navigate(page, url){
   });
 }
 
-function rewrite(url, status){
+function rewrite(url, status, tltdiff, bddiff){
      var obj = {
-          link    : url, 
-          status : status
+          url : { 
+            link: url, 
+            status : status,
+            titleDifferent: tltdiff,
+            bodyDiffernet: bddiff
+          }
         }
     
-   fs.appendFile('result.json', JSON.stringify(obj) + ",", function(err){
+   fs.appendFile('./src/result.json', JSON.stringify(obj) + ",", function(err){
      if(err) console.log(`error ${err}`);
      console.log(`complete`);
    })
@@ -47,7 +51,7 @@ function time(){
   }
 
 async function validate( page, url){
-
+  var diff = new Diff();
   log4js.configure({
     appenders: { log: { type: 'file', filename: `${LOGS_DIR}/log-${url}.txt` } },
     categories: { default: { appenders: ['log'], level: 'trace' } }
@@ -82,26 +86,28 @@ async function validate( page, url){
   
   try {
 
-    expect(titleProd.trim()).toContain(titleStage.trim()); 
+    expect(titleProd).toContain(titleStage); 
 
   } catch(err) {
 
-
-    rewrite(url, "Failed");
+    var tltdiff = diff.main(titleProd, titleStage);
+    var bddiff = diff.main(bodyProd, bodyStage);
+    rewrite(url, "Failed", diff.prettyHtml(tltdiff), diff.prettyHtml(bddiff));
     log.error(`Test End`);
     log.error(``);
   } 
 
   try {
-    expect(bodyProd.trim()).toContain(bodyStage.trim());
+    expect(bodyProd).toContain(bodyStage);
 
-    rewrite(url, "Passed");
+    rewrite(url, "Passed", "No diff", "No diff");
     log.info(`Test End`);
     log.info(``);
   } catch(err) {
     
-    rewrite(url, "Failed");
-
+    var tltdiff = diff.main(titleProd, titleStage);
+    var bddiff = diff.main(bodyProd, bodyStage);
+    rewrite(url, "Failed", diff.prettyHtml(tltdiff), diff.prettyHtml(bddiff));
     log.error(`Value ${bodyProd} and ${bodyStage} `);
     log.error(`Test End`);
     log.error(``);
@@ -113,10 +119,10 @@ describe(
   () => {
     let page
     beforeAll(async () => {
-      fs.writeFile('result.json', "", function(err){
+      fs.writeFile('./src/result.json', "", function(err){
         if(err) console.log(`error ${err}`);
       })
-      fs.appendFile('result.json', "[", function(err){
+      fs.appendFile('./src/result.json', "[", function(err){
         if(err) console.log(`error ${err}`);
       })
       page = await global.__BROWSER__.newPage()
@@ -126,7 +132,7 @@ describe(
     }, DEFAULT_TIMEOUT);
 
     afterAll(async () => {
-      fs.appendFile('result.json', "{}]", function(err){
+      fs.appendFile('./src/result.json', "{}]", function(err){
         if(err) console.log(`error ${err}`);
       })
     }, DEFAULT_TIMEOUT);
