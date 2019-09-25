@@ -30,14 +30,14 @@ async function navigate(page, url){
   });
 }
 
-function rewrite(url, status, tltdiff, bddiff){
+function rewrite(url, status,prdl, stl, tltdiff, bddiff){
      var obj = {
-          url : { 
             link: url, 
+            prodLink: prdl,
+            stageLink: stl,
             status : status,
             titleDifferent: tltdiff,
             bodyDiffernet: bddiff
-          }
         }
     
    fs.appendFile('./src/result.json', JSON.stringify(obj) + ",", function(err){
@@ -92,7 +92,7 @@ async function validate( page, url){
 
     var tltdiff = diff.main(titleProd, titleStage);
     var bddiff = diff.main(bodyProd, bodyStage);
-    rewrite(url, "Failed", diff.prettyHtml(tltdiff), diff.prettyHtml(bddiff));
+    rewrite(url, "Failed", `${PROD_URL}/${url}`, `${STAGE_URL}/${url}`,diff.prettyHtml(tltdiff), diff.prettyHtml(bddiff));
     log.error(`Test End`);
     log.error(``);
   } 
@@ -100,14 +100,14 @@ async function validate( page, url){
   try {
     expect(bodyProd).toContain(bodyStage);
 
-    rewrite(url, "Passed", "No diff", "No diff");
+    rewrite(url, "Failed", `${PROD_URL}/${url}`, `${STAGE_URL}/${url}`,"No Diff", "No Diff");
     log.info(`Test End`);
     log.info(``);
   } catch(err) {
     
     var tltdiff = diff.main(titleProd, titleStage);
     var bddiff = diff.main(bodyProd, bodyStage);
-    rewrite(url, "Failed", diff.prettyHtml(tltdiff), diff.prettyHtml(bddiff));
+    rewrite(url, "Failed", `${PROD_URL}/${url}`, `${STAGE_URL}/${url}`,"No Diff", diff.prettyHtml(bddiff));
     log.error(`Value ${bodyProd} and ${bodyStage} `);
     log.error(`Test End`);
     log.error(``);

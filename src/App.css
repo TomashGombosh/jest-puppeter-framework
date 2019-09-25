@@ -13,6 +13,14 @@
   background-color: blue
 }
 
+.prod{
+  margin-left: 20px;
+}
+
+.stage{
+  margin-left: 20px;
+}
+
 .diff-body{
   font-size: 10px;
   margin-top: -15px;
