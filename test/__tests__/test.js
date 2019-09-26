@@ -12,7 +12,7 @@ const ARTICLE_SELECTOR = 'section.pages';
 let numberOfLinks = Object.keys(data).length;
 let i = 0;
 let threads = [
-  0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135
+  0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200, 1250, 1300, numberOfLinks
 ];
 let files = [
   `./src/json/result1.json`,
