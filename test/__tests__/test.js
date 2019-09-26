@@ -9,12 +9,42 @@ const STAGE_URL = 'https://jfcote87dev.wpengine.com/pages'
 const Diff = require('text-diff');
 const TITLE_SELECTOR = '#PageDiv > h1';
 const ARTICLE_SELECTOR = 'section.pages';
-
+let numberOfLinks = Object.keys(data).length;
 let i = 0;
 let threads = [
-  0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200, 1250, 1300
+  0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200, 1250, 1300, numberOfLinks
 ];
-let numberOfLinks = Object.keys(data).length;
+let files = [
+  `./src/json/result1.json`,
+  `./src/json/result2.json`,
+  `./src/json/result3.json`,
+  `./src/json/result4.json`,
+  `./src/json/result5.json`,
+  `./src/json/result6.json`,
+  `./src/json/result7.json`,
+  `./src/json/result8.json`,
+  `./src/json/result9.json`,
+  `./src/json/result10.json`,
+  `./src/json/result11.json`,
+  `./src/json/result12.json`,
+  `./src/json/result13.json`,
+  `./src/json/result14.json`,
+  `./src/json/result15.json`,
+  `./src/json/result16.json`,
+  `./src/json/result17.json`,
+  `./src/json/result18.json`,
+  `./src/json/result19.json`,
+  `./src/json/result20.json`,
+  `./src/json/result21.json`,
+  `./src/json/result22.json`,
+  `./src/json/result23.json`,
+  `./src/json/result24.json`,
+  `./src/json/result25.json`,
+  `./src/json/result26.json`,
+  `./src/json/result27.json`,
+  `./src/json/result28.json`,
+];
+
 
 async function takeScrenshooot(page, env){
   await page.screenshot({
@@ -30,19 +60,10 @@ async function navigate(page, url){
   });
 }
 
-function rewrite(url, status,prdl, stl, tltdiff, bddiff){
-     var obj = {
-            link: url, 
-            prodLink: prdl,
-            stageLink: stl,
-            status : status,
-            titleDifferent: tltdiff,
-            bodyDiffernet: bddiff
-        }
-    
-   fs.appendFile('./src/result.json', JSON.stringify(obj) + ",", function(err){
+async function write(file, obj){
+   fs.writeFile(file, JSON.stringify(obj), function(err){
      if(err) console.log(`error ${err}`);
-     console.log(`complete`);
+     console.log(`complete write ${file}`);
    })
 }
 
@@ -50,7 +71,10 @@ function time(){
   return parseInt(new Date().getTime()/1000)
   }
 
-async function validate( page, url){
+  async function validate( page, url){
+  let rObj;
+  let prdl = `${PROD_URL}/${url}`;
+  let stl =  `${STAGE_URL}/${url}`;
   var diff = new Diff();
   log4js.configure({
     appenders: { log: { type: 'file', filename: `${LOGS_DIR}/log-${url}.txt` } },
@@ -64,11 +88,11 @@ async function validate( page, url){
   log.info(`Start Test`);
 
   await page.waitFor(1000);
-  await navigate(page, `${PROD_URL}/${url}`)
-  log.info(`Navigate to the URL ${PROD_URL}/${url}`);
+  await navigate(page, prdl)
+  log.info(`Navigate to the URL ${prdl}`);
 
   let titleProd = await page.$eval(TITLE_SELECTOR, TITLE_SELECTOR => TITLE_SELECTOR.textContent);
-  log.info(`Get title from URL ${PROD_URL}/${url} - actual prod title ${titleProd}`);
+  log.info(`Get title from URL${prdl} - actual prod title ${titleProd}`);
 
   let bodyProd = await page.$eval(ARTICLE_SELECTOR, ARTICLE_SELECTOR=> ARTICLE_SELECTOR.innerHTML);
 
@@ -76,41 +100,63 @@ async function validate( page, url){
 
   await page.waitFor(1000);
 
-  await navigate(page, `${STAGE_URL}/${url}`)
-  log.info(`Navigate to the URL ${STAGE_URL}/${url}`);
+  await navigate(page, `${stl}`)
+  log.info(`Navigate to the URL ${stl}`);
 
   let titleStage = await page.$eval(TITLE_SELECTOR, TITLE_SELECTOR => TITLE_SELECTOR.textContent);
-  log.info(`Get title from URL ${STAGE_URL}/${url} - actual prod title ${titleStage}`);
+  log.info(`Get title from URL ${stl} - actual prod title ${titleStage}`);
 
   let bodyStage = await page.$eval(ARTICLE_SELECTOR, ARTICLE_SELECTOR=> ARTICLE_SELECTOR.innerHTML);
-  
+  var tltdiff = diff.main(titleProd, titleStage);
+  var bddiff = diff.main(bodyProd, bodyStage);
   try {
 
     expect(titleProd).toContain(titleStage); 
 
   } catch(err) {
-
-    var tltdiff = diff.main(titleProd, titleStage);
-    var bddiff = diff.main(bodyProd, bodyStage);
-    rewrite(url, "Failed", `${PROD_URL}/${url}`, `${STAGE_URL}/${url}`,diff.prettyHtml(tltdiff), diff.prettyHtml(bddiff));
+    rObj = {
+      link: url, 
+      prodLink: prdl,
+      stageLink: stl,
+      status : "Failed",
+      titleDifferent: diff.prettyHtml(tltdiff),
+      bodyDiffernet: diff.prettyHtml(bddiff)
+    }
     log.error(`Test End`);
     log.error(``);
+    return rObj;
   } 
 
   try {
     expect(bodyProd).toContain(bodyStage);
 
-    rewrite(url, "Failed", `${PROD_URL}/${url}`, `${STAGE_URL}/${url}`,"No Diff", "No Diff");
+    rObj = {
+      link: url, 
+      prodLink: prdl,
+      stageLink: stl,
+      status : "Passed",
+      titleDifferent: "No Diff",
+      bodyDiffernet: "No Diff"
+    }
+
     log.info(`Test End`);
     log.info(``);
+    return rObj;
   } catch(err) {
     
-    var tltdiff = diff.main(titleProd, titleStage);
-    var bddiff = diff.main(bodyProd, bodyStage);
-    rewrite(url, "Failed", `${PROD_URL}/${url}`, `${STAGE_URL}/${url}`,"No Diff", diff.prettyHtml(bddiff));
+    rObj = {
+      link: url, 
+      prodLink: prdl,
+      stageLink: stl,
+      status : "Failed",
+      titleDifferent: "No Diff",
+      bodyDiffernet: diff.prettyHtml(bddiff)
+    }
+
     log.error(`Value ${bodyProd} and ${bodyStage} `);
     log.error(`Test End`);
     log.error(``);
+    return rObj;
   }
 }
 
@@ -119,211 +165,293 @@ describe(
   () => {
     let page
     beforeAll(async () => {
-      fs.writeFile('./src/result.json', "", function(err){
-        if(err) console.log(`error ${err}`);
-      })
-      fs.appendFile('./src/result.json', "[", function(err){
-        if(err) console.log(`error ${err}`);
-      })
       page = await global.__BROWSER__.newPage()
       await page.setViewport({width: 1920, height: 1080})
       jest.setTimeout(10000000);
 
     }, DEFAULT_TIMEOUT);
 
-    afterAll(async () => {
-      fs.appendFile('./src/result.json', "{}]", function(err){
-        if(err) console.log(`error ${err}`);
-      })
-    }, DEFAULT_TIMEOUT);
-
     test(`Test Script ${data[threads[0]].slug}`, async () => {
+      const jsonArray = []
       while(threads[0]<threads[1]){
         threads[0]++;
-          await validate(page, data[threads[0]].slug);
+         const obj =  await validate(page, data[threads[0]].slug);
+         jsonArray.push(obj);
       }
+      await write(files[0], jsonArray);
     });
 
     test(`Test Script ${data[threads[1]].slug}`, async () => {
+      const jsonArray = []
       while(threads[1]<threads[2]){
         threads[1]++;
-          await validate(page, data[threads[1]].slug);
+        const obj = await validate(page, data[threads[1]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[1], jsonArray);
     });
 
     test(`Test Script ${data[threads[2]].slug}`, async () => {
+      const jsonArray = []
       while(threads[2]<threads[3]){
         threads[2]++;
-          await validate(page, data[threads[2]].slug);
+        const obj = await validate(page, data[threads[2]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[2], jsonArray);
     });
 
     test(`Test Script ${data[threads[3]].slug}`, async () => {
+      const jsonArray = []
       while(threads[3]<threads[4]){
         threads[3]++;
-          await validate(page, data[threads[3]].slug);
+        const obj = await validate(page, data[threads[3]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[3], jsonArray);
     });
+
 
     test(`Test Script ${data[threads[4]].slug}`, async () => {
+      const jsonArray = []
       while(threads[4]<threads[5]){
-        threads[5]++;
-          await validate(page, data[threads[5]].slug);
+        threads[4]++;
+        const obj = await validate(page, data[threads[4]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[4], jsonArray);
     });
 
+
+    test(`Test Script ${data[threads[5]].slug}`, async () => {
+      const jsonArray = []
+      while(threads[5]<threads[6]){
+        threads[5]++;
+        const obj = await validate(page, data[threads[5]].slug);
+        jsonArray.push(obj);
+      }
+      await write(files[5], jsonArray);
+    });
+
+
     test(`Test Script ${data[threads[6]].slug}`, async () => {
+      const jsonArray = []
       while(threads[6]<threads[7]){
         threads[6]++;
-          await validate(page, data[threads[6]].slug);
+        const obj = await validate(page, data[threads[6]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[6], jsonArray);
     });
 
     test(`Test Script ${data[threads[7]].slug}`, async () => {
+      const jsonArray = []
       while(threads[7]<threads[8]){
         threads[7]++;
-          await validate(page, data[threads[7]].slug);
+        const obj = await validate(page, data[threads[7]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[7], jsonArray);
     });
 
     test(`Test Script ${data[threads[8]].slug}`, async () => {
+      const jsonArray = []
       while(threads[8]<threads[9]){
         threads[8]++;
-          await validate(page, data[threads[8]].slug);
+        const obj = await validate(page, data[threads[8]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[8], jsonArray);
     });
 
     test(`Test Script ${data[threads[9]].slug}`, async () => {
+      const jsonArray = []
       while(threads[9]<threads[10]){
         threads[9]++;
-          await validate(page, data[threads[9]].slug);
+        const obj = await validate(page, data[threads[9]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[9], jsonArray);
     });
 
     test(`Test Script ${data[threads[10]].slug}`, async () => {
+      const jsonArray = []
       while(threads[10]<threads[11]){
         threads[10]++;
-          await validate(page, data[threads[10]].slug);
+        const obj = await validate(page, data[threads[10]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[10], jsonArray);
     });
 
     test(`Test Script ${data[threads[11]].slug}`, async () => {
+      const jsonArray = []
       while(threads[11]<threads[12]){
         threads[11]++;
-          await validate(page, data[threads[11]].slug);
+        const obj = await validate(page, data[threads[11]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[11], jsonArray);
     });
 
     test(`Test Script ${data[threads[12]].slug}`, async () => {
+      const jsonArray = []
       while(threads[12]<threads[13]){
         threads[12]++;
-          await validate(page, data[threads[12]].slug);
+        const obj = await validate(page, data[threads[12]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[12], jsonArray);
     });
 
     test(`Test Script ${data[threads[13]].slug}`, async () => {
+      const jsonArray = []
       while(threads[13]<threads[14]){
         threads[13]++;
-          await validate(page, data[threads[13]].slug);
+        const obj = await validate(page, data[threads[13]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[13], jsonArray);
     });
 
     test(`Test Script ${data[threads[14]].slug}`, async () => {
+      const jsonArray = []
       while(threads[14]<threads[15]){
         threads[14]++;
-          await validate(page, data[threads[14]].slug);
+        const obj = await validate(page, data[threads[14]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[14], jsonArray);
     });
 
     test(`Test Script ${data[threads[15]].slug}`, async () => {
+      const jsonArray = []
       while(threads[15]<threads[16]){
         threads[15]++;
-          await validate(page, data[threads[15]].slug);
+        const obj = await validate(page, data[threads[15]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[15], jsonArray);
     });
 
     test(`Test Script ${data[threads[16]].slug}`, async () => {
+      const jsonArray = []
       while(threads[16]<threads[17]){
         threads[16]++;
-          await validate(page, data[threads[16]].slug);
+        const obj = await validate(page, data[threads[16]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[16], jsonArray);
     });
 
     test(`Test Script ${data[threads[17]].slug}`, async () => {
+      const jsonArray = []
       while(threads[17]<threads[18]){
         threads[17]++;
-          await validate(page, data[threads[17]].slug);
+        const obj = await validate(page, data[threads[17]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[17], jsonArray);
     });
 
     test(`Test Script ${data[threads[18]].slug}`, async () => {
+      const jsonArray = []
       while(threads[18]<threads[19]){
         threads[18]++;
-          await validate(page, data[threads[18]].slug);
+        const obj = await validate(page, data[threads[18]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[18], jsonArray);
     });
 
     test(`Test Script ${data[threads[19]].slug}`, async () => {
+      const jsonArray = []
       while(threads[19]<threads[20]){
         threads[19]++;
-          await validate(page, data[threads[19]].slug);
+        const obj = await validate(page, data[threads[19]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[19], jsonArray);
     });
 
     test(`Test Script ${data[threads[20]].slug}`, async () => {
+      const jsonArray = []
       while(threads[20]<threads[21]){
         threads[20]++;
-          await validate(page, data[threads[20]].slug);
+        const obj = await validate(page, data[threads[20]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[20], jsonArray);
     });
 
     test(`Test Script ${data[threads[21]].slug}`, async () => {
+      const jsonArray = []
       while(threads[21]<threads[22]){
         threads[21]++;
-          await validate(page, data[threads[21]].slug);
+        const obj = await validate(page, data[threads[21]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[21], jsonArray);
     });
 
     test(`Test Script ${data[threads[22]].slug}`, async () => {
+      const jsonArray = []
       while(threads[22]<threads[23]){
         threads[22]++;
-          await validate(page, data[threads[22]].slug);
+        const obj = await validate(page, data[threads[22]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[22], jsonArray);
     });
 
     test(`Test Script ${data[threads[23]].slug}`, async () => {
+      const jsonArray = []
       while(threads[23]<threads[24]){
         threads[23]++;
-          await validate(page, data[threads[23]].slug);
+        const obj = await validate(page, data[threads[23]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[23], jsonArray);
     });
 
     test(`Test Script ${data[threads[24]].slug}`, async () => {
+      const jsonArray = []
       while(threads[24]<threads[25]){
         threads[24]++;
-          await validate(page, data[threads[24]].slug);
+        const obj = await validate(page, data[threads[24]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[24], jsonArray);
     });
 
     test(`Test Script ${data[threads[25]].slug}`, async () => {
+      const jsonArray = []
       while(threads[25]<threads[26]){
         threads[25]++;
-          await validate(page, data[threads[25]].slug);
+        const obj = await validate(page, data[threads[25]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[25], jsonArray);
     });
 
     test(`Test Script ${data[threads[26]].slug}`, async () => {
+      const jsonArray = []
       while(threads[26]<threads[27]){
         threads[26]++;
-          await validate(page, data[threads[26]].slug);
+        const obj = await validate(page, data[threads[26]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[26], jsonArray);
     });
 
     test(`Test Script ${data[threads[27]].slug}`, async () => {
-      while(threads[27]<threads[numberOfLinks]){
+      const jsonArray = []
+      while(threads[27]<threads[28]){
         threads[27]++;
-          await validate(page, data[threads[27]].slug);
+        const obj = await validate(page, data[threads[27]].slug);
+        jsonArray.push(obj);
       }
+      await write(files[27], jsonArray);
     });
 
   },
